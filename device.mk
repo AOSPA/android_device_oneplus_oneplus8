@@ -340,6 +340,10 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# WFD
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1
+
 # WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
