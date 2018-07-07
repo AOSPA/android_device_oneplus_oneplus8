@@ -1,0 +1,9 @@
+# Alert Slider
+/system/bin/tri-state-key_daemon                                   u:object_r:tri-state-key_daemon_exec:s0
+
+# Persist
+/mnt/vendor/persist/engineermode(/.*)?                             u:object_r:persist_engineer_file:s0
+
+# SysFS
+/sys/bus/platform/devices/soc/soc:tri_state_key/hall_data_calib    u:object_r:sysfs_tri_state_key:s0
+/sys/devices/platform/soc/soc:tri_state_key/hall_data_calib        u:object_r:sysfs_tri_state_key:s0
