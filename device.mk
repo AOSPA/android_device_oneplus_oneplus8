@@ -48,6 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Alert Slider
 PRODUCT_PACKAGES += \
+    TriStateHandler \
     tri-state-key_daemon
 
 # Attestation
@@ -279,6 +280,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus8SeriesFrameworks \
     FrameworksResTarget \
     OnePlus8Frameworks \
     OnePlus8SeriesFrameworks \
