@@ -88,6 +88,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus8
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
+    androidboot.boot_devices=soc/1d84000.ufshc \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
