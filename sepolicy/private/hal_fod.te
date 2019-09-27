@@ -1,0 +1,17 @@
+type hal_fod, coredomain, domain;
+hal_server_domain(hal_fod, hal_pa_fod)
+
+type hal_fod_exec, exec_type, system_file_type, file_type;
+init_daemon_domain(hal_fod)
+
+# Allow access to the HALs.
+hal_client_domain(hal_fod, hal_fingerprint)
+
+# Allow binder communication with hal_display_default.
+binder_call(hal_fod, hal_display_default)
+
+# Allow hal_fod to hal_display_hwservice.
+allow hal_fod hal_display_hwservice:hwservice_manager find;
+
+# Allow hal_fod to hal_fingerprint_hwservice.
+allow hal_fod hal_fingerprint_hwservice:hwservice_manager find;
