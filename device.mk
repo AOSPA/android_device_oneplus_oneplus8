@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1-service.oneplus8 \
     vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
