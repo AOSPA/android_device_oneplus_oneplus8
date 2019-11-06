@@ -72,6 +72,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     AOSPAOnePlus8ProSystemUI \
     AOSPAOnePlus8SeriesFrameworks \
+    AOSPAOnePlus8SeriesSettings \
     AOSPAOnePlus8SeriesSystemUI \
     AOSPAOnePlus8SystemUI \
     OnePlus8Frameworks \
