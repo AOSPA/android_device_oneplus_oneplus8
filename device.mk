@@ -258,6 +258,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Platform
 TARGET_BOARD_PLATFORM := kona
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # QSPM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qspm.enable=true
