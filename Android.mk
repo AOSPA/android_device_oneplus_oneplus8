@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 ifneq ($(filter oneplus8 oneplus8pro oneplus8t,$(TARGET_DEVICE)),)
 
 # Symlinks
