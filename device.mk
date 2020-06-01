@@ -47,6 +47,14 @@ PRODUCT_SOONG_NAMESPACES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
