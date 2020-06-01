@@ -37,9 +37,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Init
-PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
@@ -59,6 +56,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Platform
+TARGET_BOARD_PLATFORM := kona
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := all
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
