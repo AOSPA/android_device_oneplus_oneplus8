@@ -22,6 +22,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti
+
 # Boot
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.kona \
