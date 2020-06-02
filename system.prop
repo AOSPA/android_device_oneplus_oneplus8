@@ -16,7 +16,6 @@ persist.vendor.data.mode=concurrent
 # MM
 media.stagefright.thumbnail.prefer_hw_codecs=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-vendor.mm.enable.qcom_parser=63963135
 
 # RIL
 ril.subscription.types=NV,RUIM
@@ -28,3 +27,16 @@ telephony.lteOnCdmaDevice=1
 
 # WFD
 persist.debug.wfd.enable=1
+
+## ONEPLUS PROPERTIES BELOW ##
+
+# Bluetooth
+persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.twsplus=true
+
+# Enable monitor rotation.
+ro.audio.monitorRotation=true
+
+# MM
+vendor.mm.enable.qcom_parser=134086655
