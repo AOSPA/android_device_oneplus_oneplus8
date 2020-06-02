@@ -1,0 +1,30 @@
+# Bluetooth
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.enable.splita2dp=true
+ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+ro.bluetooth.wipower=true
+vendor.bluetooth.soc=hastings
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Data
+ro.vendor.use_data_netmgrd=true
+persist.vendor.data.mode=concurrent
+
+# MM
+media.stagefright.thumbnail.prefer_hw_codecs=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vendor.mm.enable.qcom_parser=63963135
+
+# RIL
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+
+# Telephony
+ro.telephony.default_network=22,22
+telephony.lteOnCdmaDevice=1
+
+# WFD
+persist.debug.wfd.enable=1
