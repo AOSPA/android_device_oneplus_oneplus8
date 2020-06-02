@@ -1,2 +1,6 @@
+# Hotword
+-system/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+-system/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+
 # WARP
 system/sbin/dashd:system/bin/dashd
