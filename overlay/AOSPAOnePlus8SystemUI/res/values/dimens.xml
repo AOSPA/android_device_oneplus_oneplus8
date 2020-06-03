@@ -16,14 +16,9 @@
 -->
 <resources>
 
-    <!-- OnePlus uses a proprietary vibrator HAL to utilize the new powerful motor since the
-         OnePlus 7 Pro. This HAL expects a different format for the data instead of the usual (ms)
-         timing(the duration which the vibrator is expected to vibrate for). -->
-    <bool name="config_hasOnePlusHapticMotor">true</bool>
-
-    <!-- The location of the devices physical alert slider.
-         0: Left
-         1: Right -->
-    <integer name="config_alertSliderLocation">1</integer>
+    <!-- Alert Slider UI -->
+    <dimen name="tri_state_down_dialog_position">565px</dimen>
+    <dimen name="tri_state_middle_dialog_position">440px</dimen>
+    <dimen name="tri_state_up_dialog_position">315px</dimen>
 
 </resources>

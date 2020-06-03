@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2020 Paranoid Android
+<!-- Copyright (C) 2020 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,16 +13,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.aospa.systemui.oneplus8">
 
-    <!-- OnePlus uses a proprietary vibrator HAL to utilize the new powerful motor since the
-         OnePlus 7 Pro. This HAL expects a different format for the data instead of the usual (ms)
-         timing(the duration which the vibrator is expected to vibrate for). -->
-    <bool name="config_hasOnePlusHapticMotor">true</bool>
-
-    <!-- The location of the devices physical alert slider.
-         0: Left
-         1: Right -->
-    <integer name="config_alertSliderLocation">1</integer>
-
-</resources>
+    <overlay
+        android:isStatic="true"
+        android:priority="800"
+        android:requiredSystemPropertyName="ro.boot.prj_version"
+        android:requiredSystemPropertyValue="12"
+        android:targetPackage="com.android.systemui" />
+</manifest>
