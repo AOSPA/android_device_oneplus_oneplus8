@@ -283,7 +283,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus8ProSystemUI \
     AOSPAOnePlus8SeriesFrameworks \
+    AOSPAOnePlus8SystemUI \
     FrameworksResTarget \
     OnePlus8Frameworks \
     OnePlus8SeriesFrameworks \
