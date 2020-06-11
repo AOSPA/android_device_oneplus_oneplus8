@@ -18,4 +18,7 @@
 
     <string name="config_mainBuiltInDisplayCutout">M -525 79.5 A 41.5 41.5 0 0 1 -608 79.5 A 41.5 41.5 0 0 1 -525 79.5 Z M -608,0 L -525,0 Z M -720,0 L -720,121 Z</string>
 
+    <!-- The default peak refresh rate for a given device. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
 </resources>
