@@ -54,10 +54,16 @@ void property_override(char const prop[], char const value[]) {
 void vendor_load_properties() {
   std::string variant = GetProperty(PROP_VARIANT, "");
   if (variant == "12") {
+    property_override("ro.fod.pos.x", "453");
+    property_override("ro.fod.pos.y", "1823");
+    property_override("ro.fod.size", "174");
     property_override("ro.product.device", "OnePlus8");
     property_override("ro.product.system.device", "OnePlus8");
     property_override("ro.product.system.model", "OnePlus 8");
   } else if (variant == "11") {
+    property_override("ro.fod.pos.x", "604");
+    property_override("ro.fod.pos.y", "2434");
+    property_override("ro.fod.size", "232");
     property_override("ro.product.device", "OnePlus8Pro");
     property_override("ro.product.system.device", "OnePlus8Pro");
     property_override("ro.product.system.model", "OnePlus 8 Pro");
