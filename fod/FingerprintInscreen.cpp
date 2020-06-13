@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2020 The LineageOS Project
+ *               2020 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +19,14 @@
 
 #include "FingerprintInscreen.h"
 
+#include <android-base/properties.h>
 #include <hidl/HidlTransportSupport.h>
+
+#define FOD_POS_X "ro.fod.pos.x"
+#define FOD_POS_Y "ro.fod.pos.y"
+#define FOD_SIZE "ro.fod.size"
+
+using android::base::GetProperty;
 
 namespace vendor {
 namespace aospa {
@@ -77,15 +85,21 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    return 419;
+    std::string str_fodPosX = GetProperty(FOD_POS_X, "");
+    int i_fodPosX = std::stoi (str_fodPosX);
+    return i_fodPosX;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    return 1660;
+    std::string str_fodPosY = GetProperty(FOD_POS_Y, "");
+    int i_fodPosY = std::stoi (str_fodPosY);
+    return i_fodPosY;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    return 242;
+    std::string str_fodSize = GetProperty(FOD_SIZE, "");
+    int i_fodSize = std::stoi (str_fodSize);
+    return i_fodSize;
 }
 
 }  // namespace implementation
