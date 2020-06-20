@@ -33,6 +33,9 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     librecovery_updater_msm \
     libz
 
+# Common
+$(call inherit-product, device/oneplus/common/common.mk)
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
