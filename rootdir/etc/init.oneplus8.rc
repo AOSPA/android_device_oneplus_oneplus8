@@ -1,0 +1,2 @@
+service vendor.secure_element_hal_service /system/bin/true
+    disabled

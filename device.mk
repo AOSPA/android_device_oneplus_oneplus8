@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.oneplus8.rc \
     init.recovery.qcom.rc
 
 PRODUCT_COPY_FILES += \
