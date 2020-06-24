@@ -6,6 +6,13 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+        name: "vendor.goodix.hardware.biometrics.fingerprint@2.1.xml",
+        src: "vendor.goodix.hardware.biometrics.fingerprint@2.1.xml",
+        sub_dir: "vintf/manifest",
+        vendor: true,
+}
+
+prebuilt_etc_xml {
         name: "vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.xml",
         src: "vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.xml",
         sub_dir: "vintf/manifest",
