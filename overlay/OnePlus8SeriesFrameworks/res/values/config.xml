@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
+         The N entries of this array define N + 1 control points as follows:
+         (1-based arrays)
+
+         Point 1:            (0, value[1]):             lux <= 0
+         Point 2:     (level[1], value[2]):  0        < lux <= level[1]
+         Point 3:     (level[2], value[3]):  level[2] < lux <= level[3]
+         ...
+         Point N+1: (level[N], value[N+1]):  level[N] < lux
+
+         The control points must be strictly increasing.  Each control point
+         corresponds to an entry in the brightness backlight values arrays.
+         For example, if lux == level[1] (first element of the levels array)
+         then the brightness will be determined by value[2] (second element
+         of the brightness values array).
+
+         Spline interpolation is used to determine the auto-brightness
+         backlight values for lux levels between these control points.
+
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>4</item>
+        <item>12</item>
+        <item>20</item>
+        <item>28</item>
+        <item>47</item>
+        <item>63</item>
+        <item>86</item>
+        <item>150</item>
+        <item>160</item>
+        <item>220</item>
+        <item>270</item>
+        <item>360</item>
+        <item>420</item>
+        <item>510</item>
+        <item>620</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3100</item>
+        <item>5000</item>
+        <item>8000</item>
+        <item>12000</item>
+    </integer-array>
+
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+         brightness of an all-white image.
+
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>2.0487</item>
+        <item>4.8394</item>
+        <item>17.2619</item>
+        <item>39.2619</item>
+        <item>50.671</item>
+        <item>72.95</item>
+        <item>80.46</item>
+        <item>84.38</item>
+        <item>89.51</item>
+        <item>100.34</item>
+        <item>102.21</item>
+        <item>109.48</item>
+        <item>114.19</item>
+        <item>123.86</item>
+        <item>129.18</item>
+        <item>138.07</item>
+        <item>145.62</item>
+        <item>168.84</item>
+        <item>234.9</item>
+        <item>291</item>
+        <item>370</item>
+        <item>492</item>
+        <item>580</item>
+    </array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
+         This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>2.51</item>
+        <item>2.52</item>
+        <item>2.73</item>
+        <item>3.09</item>
+        <item>3.52</item>
+        <item>4.26</item>
+        <item>5.19</item>
+        <item>6.25</item>
+        <item>7.64</item>
+        <item>9.16</item>
+        <item>10.93</item>
+        <item>12.95</item>
+        <item>15.03</item>
+        <item>17.1</item>
+        <item>19.62</item>
+        <item>22.25</item>
+        <item>25.05</item>
+        <item>28.26</item>
+        <item>31.3</item>
+        <item>34.92</item>
+        <item>38.71</item>
+        <item>42.12</item>
+        <item>46.3</item>
+        <item>50.74</item>
+        <item>55.09</item>
+        <item>59.97</item>
+        <item>65.12</item>
+        <item>70.5</item>
+        <item>76.13</item>
+        <item>81.89</item>
+        <item>88.44</item>
+        <item>94.87</item>
+        <item>101.73</item>
+        <item>108.62</item>
+        <item>115.56</item>
+        <item>123.42</item>
+        <item>130.97</item>
+        <item>139.46</item>
+        <item>147.95</item>
+        <item>156.51</item>
+        <item>165.26</item>
+        <item>174.2</item>
+        <item>183.4</item>
+        <item>192.44</item>
+        <item>202.14</item>
+        <item>213.46</item>
+        <item>224.19</item>
+        <item>236.26</item>
+        <item>247.38</item>
+        <item>256.92</item>
+        <item>269.27</item>
+        <item>283.3</item>
+        <item>296.07</item>
+        <item>309.87</item>
+        <item>322.62</item>
+        <item>336.62</item>
+        <item>351.48</item>
+        <item>365.36</item>
+        <item>380.21</item>
+        <item>396.71</item>
+        <item>411.47</item>
+        <item>426.86</item>
+        <item>444.93</item>
+        <item>461.3</item>
+        <item>477.34</item>
+    </array>
+
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array.
+
+         This array should be equal in size to config_screenBrightnessBacklight. -->
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>0</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+        <item>44</item>
+        <item>48</item>
+        <item>52</item>
+        <item>56</item>
+        <item>60</item>
+        <item>64</item>
+        <item>68</item>
+        <item>72</item>
+        <item>76</item>
+        <item>80</item>
+        <item>84</item>
+        <item>88</item>
+        <item>92</item>
+        <item>96</item>
+        <item>100</item>
+        <item>104</item>
+        <item>108</item>
+        <item>112</item>
+        <item>116</item>
+        <item>120</item>
+        <item>123</item>
+        <item>127</item>
+        <item>131</item>
+        <item>135</item>
+        <item>139</item>
+        <item>143</item>
+        <item>147</item>
+        <item>151</item>
+        <item>155</item>
+        <item>159</item>
+        <item>163</item>
+        <item>167</item>
+        <item>171</item>
+        <item>175</item>
+        <item>179</item>
+        <item>183</item>
+        <item>187</item>
+        <item>191</item>
+        <item>195</item>
+        <item>199</item>
+        <item>203</item>
+        <item>207</item>
+        <item>211</item>
+        <item>215</item>
+        <item>219</item>
+        <item>223</item>
+        <item>227</item>
+        <item>231</item>
+        <item>235</item>
+        <item>239</item>
+        <item>243</item>
+        <item>246</item>
+        <item>251</item>
+        <item>255</item>
+    </integer-array>
+
+</resources>
