@@ -24,4 +24,7 @@
     <dimen name="tri_state_up_dialog_position_deep_land">28px</dimen>
     <dimen name="tri_state_position_padding_extra">0px</dimen>
 
+    <!-- Biometric Prompt -->
+    <dimen name="biometric_dialog_fod_margin">120dp</dimen>
+
 </resources>
