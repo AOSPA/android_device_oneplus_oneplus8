@@ -150,5 +150,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
 
+PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/private
+
 # VNDK
 BOARD_VNDK_VERSION := current
