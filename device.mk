@@ -88,10 +88,16 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Platform
+TARGET_BOARD_PLATFORM := kona
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
     av \
     bt \
+    display \
+    gps \
     perf \
     telephony \
     wfd

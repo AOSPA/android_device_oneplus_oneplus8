@@ -14,8 +14,6 @@
 
 DEVICE_PATH := device/oneplus/oneplus8
 
-TARGET_BOARD_PLATFORM := kona
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
