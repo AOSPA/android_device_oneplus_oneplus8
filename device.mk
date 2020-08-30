@@ -101,6 +101,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.fod.pos.y=1823 \
     persist.fod.size=174
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.boot.fingerprintbstate=orange
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
