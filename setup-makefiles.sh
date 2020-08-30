@@ -46,5 +46,7 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 cat << EOF >> "$ANDROIDMK"
 EOF
 
+sed -i 's/VENDOR/VENDOR_OVERLAY/g' "$PRODUCTMK"
+
 # Finish
 write_footers

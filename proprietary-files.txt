@@ -1,3 +1,7 @@
+# Fingerprint
+vendor/lib/libgf_ud_hal.so|4565d06ce750595cdafeb663b9c465a7d1fd021d
+vendor/lib64/libgf_ud_hal.so|83bd97fc5a88e938845e4117d46e32fb122e3b08
+
 # Hotword
 -system/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
 -system/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED

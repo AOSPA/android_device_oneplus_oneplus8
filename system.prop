@@ -45,6 +45,9 @@ ro.telephony.default_network=33,22
 
 ## CUSTOM PROPERTIES BELOW ##
 
+# Fingerprint
+vendor.boot.fingerprintbstate=orange
+
 # Recovery
 ro.recovery.ui.margin_height=150
 

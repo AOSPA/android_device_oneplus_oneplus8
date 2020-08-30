@@ -65,4 +65,9 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+PROPRIETARY_ROOT="${ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+
+sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${PROPRIETARY_ROOT}/vendor/lib/libgf_ud_hal.so"
+sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${PROPRIETARY_ROOT}/vendor/lib64/libgf_ud_hal.so"
+
 "${MY_DIR}/setup-makefiles.sh"
