@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.oneplus8"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.2-service.oneplus8"
 
 #include <android/log.h>
 #include <hidl/HidlSupport.h>

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.oneplus8"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.oneplus8"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.2-service.oneplus8"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.2-service.oneplus8"
 
 #define FINGERPRINT_GOODIX_HARDWARE_MODULE_ID "goodix.fod"
 #define FINGERPRINT_GOODIX_G6_HARDWARE_MODULE_ID "goodix.g6.fod"
