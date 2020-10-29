@@ -237,6 +237,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q8250-19134-1
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAOnePlus8SeriesFrameworks \
