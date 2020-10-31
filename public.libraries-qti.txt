@@ -1,0 +1,7 @@
+libbinauralrenderer_wrapper.qti.so
+libhoaeffects.qti.so
+libhta_hexagon_runtime.so
+libnpu.so
+libqvrcamera_client.qti.so
+libqvrservice_client.qti.so
+libvraudio_client.qti.so

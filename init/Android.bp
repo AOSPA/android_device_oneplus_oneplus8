@@ -1,4 +1,5 @@
 // Copyright (C) 2020 The LineageOS Project
+//                    Paranoid Android
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,4 +22,86 @@ cc_library_static {
         "system/core/base/include",
         "system/core/init"
     ]
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.rc",
+    src: "init.oneplus.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.camera.rc",
+    src: "init.oneplus.camera.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.display.rc",
+    src: "init.oneplus.display.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.fingerprint.rc",
+    src: "init.oneplus.fingerprint.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.haptics.rc",
+    src: "init.oneplus.haptics.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.power.rc",
+    src: "init.oneplus.power.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.thermal.rc",
+    src: "init.oneplus.thermal.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.ufs.rc",
+    src: "init.oneplus.ufs.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.usb.rc",
+    src: "init.oneplus.usb.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    vendor: true,
 }

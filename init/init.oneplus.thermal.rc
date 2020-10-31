@@ -1,0 +1,41 @@
+# Copyright (C) 2020 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on fs
+    chown system system /dev/msm_thermal
+    chown system system /dev/skin_thermal
+    chown system system /dev/modem_skin_thermal
+    chown system system /dev/mmw0_thermal
+    chown system system /dev/mmw1_thermal
+    chown system system /dev/mmw2_thermal
+    chmod 0664 /dev/msm_thermal
+    chmod 0664 /dev/skin_thermal
+    chmod 0664 /dev/modem_skin_thermal
+    chmod 0664 /dev/mmw0_thermal
+    chmod 0664 /dev/mmw1_thermal
+    chmod 0664 /dev/mmw2_thermal
+
+on post-fs
+    chown root system /sys/class/thermal/cooling_device0/cur_state
+    chown root system /sys/class/thermal/cooling_device1/cur_state
+    chown root system /sys/class/thermal/cooling_device2/cur_state
+    chown root system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chown root system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown root system /sys/class/thermal/cooling_device14/cur_state
+    chmod 660 /sys/class/thermal/cooling_device0/cur_state
+    chmod 660 /sys/class/thermal/cooling_device1/cur_state
+    chmod 660 /sys/class/thermal/cooling_device2/cur_state
+    chmod 660 /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chmod 660 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chmod 660 /sys/class/thermal/cooling_device14/cur_state
