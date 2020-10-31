@@ -57,7 +57,8 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OnePlus8Frameworks \
-    OnePlus8SeriesFrameworks
+    OnePlus8SeriesFrameworks \
+    OnePlus8SystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
