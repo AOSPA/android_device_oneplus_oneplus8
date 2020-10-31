@@ -1,0 +1,22 @@
+# Copyright (C) 2020 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on early-init
+    # Audio Modules
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules adsp_loader_dlkm apr_dlkm bolero_cdc_dlkm hdmi_dlkm machine_dlkm mbhc_dlkm native_dlkm pinctrl_lpi_dlkm pinctrl_wcd_dlkm platform_dlkm q6_dlkm q6_notifier_dlkm q6_pdr_dlkm rx_macro_dlkm snd_event_dlkm stub_dlkm swr_ctrl_dlkm swr_dlkm tfa9894_dlkm tx_macro_dlkm usf_dlkm va_macro_dlkm wcd938x_dlkm wcd938x_slave_dlkm wcd9xxx_dlkm wcd_core_dlkm wsa881x_dlkm wsa_macro_dlkm
+
+on fs
+    # Alert Slider
+    chown system system /sys/bus/platform/devices/soc/soc\:tri_state_key/hall_data_calib
+    chown system system /sys/bus/platform/devices/soc/soc\:tri_state_key/hall_set_value
