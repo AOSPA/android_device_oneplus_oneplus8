@@ -258,9 +258,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworksResTarget \
     OnePlus8Frameworks \
     OnePlus8SeriesFrameworks \
-    OnePlus8SystemUI
+    OnePlus8SystemUI \
+    WifiResTarget
 
 # PASR HAL
 PRODUCT_PROPERTY_OVERRIDES += \
