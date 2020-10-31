@@ -1,0 +1,54 @@
+# Copyright (C) 2020 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on charger
+    start dashd
+
+on fs
+    chown system system /proc/enhance_dash
+
+on init
+    chown system system /dev/dash
+    chmod 0664 /dev/dash
+
+on post-fs
+    chmod 0664 /sys/module/qpnp_smb5/parameters/usb_connector_temp
+    chown system system /sys/module/qpnp_smb5/parameters/usb_connector_temp
+    chmod 0664 /sys/module/qpnp_smb5/parameters/disable_connector_protect
+    chown system system /sys/module/qpnp_smb5/parameters/disable_connector_protect
+    chmod 0664 /sys/module/qpnp_smb5/parameters/usb_interval_temp
+    chown system system /sys/module/qpnp_smb5/parameters/usb_interval_temp
+
+on charger && property:ro.boot.type=debug
+    start apexd
+    wait_for_prop apexd.status activated
+    perform_apex_config
+    setprop sys.usb.config adb
+    start adbd
+    write /dev/kmsg "start adbd"
+    write /config/usb_gadget/g1/idVendor 0x2A70
+    write /config/usb_gadget/g1/idProduct 0x4ee7
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "adb"
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+
+# Fix APSD issue when booted with DASH connected.
+on property:sys.boot_completed=1
+    write /sys/module/smb5_lib/parameters/sys_boot_complete 1
+
+service dashd /vendor/bin/dashd
+    class core
+    critical
+    seclabel u:r:dashd:s0
+    group root system
