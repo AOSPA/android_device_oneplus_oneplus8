@@ -1124,7 +1124,6 @@ vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
 # NFC
-vendor/bin/nqnfcinfo
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 vendor/lib/libsn100u_fw.so
