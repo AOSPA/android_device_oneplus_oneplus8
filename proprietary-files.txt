@@ -1123,29 +1123,6 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
-# Media
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/media_codecs_c2.xml
-vendor/etc/media_codecs_performance_c2.xml
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_v4l2codec.so
-
 # NFC
 vendor/bin/nqnfcinfo
 vendor/etc/libnfc-mtp-SN100.conf
@@ -2058,24 +2035,6 @@ vendor/lib/hw/awinic.haptic.effect.so|6fa26f2d07188456fdd32dc5bbbbdc690c91a0ec
 vendor/lib/soundfx/libhaptic_effect.so|4a8b3d079938a19f7db4df48561508d442085fdf
 vendor/lib64/soundfx/libhaptic_effect.so|4a8b3d079938a19f7db4df48561508d442085fdf
 vendor/lib64/vendor.oneplus.hardware.lmvibrator@1.0.so|43b82c635c4de271b6aa5c606c8e487a9a825e7c
-
-# Video
-vendor/bin/mm-vidc-omx-test
-vendor/lib/libI420colorconvert.so
--vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libOmxVenc.so
-vendor/lib/libfastcrc.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libstreamparser.so
-vendor/lib/libswvdec.so
-vendor/lib/libvideooptfeature.so
-vendor/lib/libvideoutils.so
-vendor/lib64/libI420colorconvert.so
--vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libOmxVenc.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libswvdec.so
-vendor/lib64/libvideooptfeature.so
 
 # WFD
 vendor/bin/wfdhdcphalservice
