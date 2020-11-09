@@ -348,13 +348,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 TARGET_MOUNT_POINTS_SYMLINKS := false
 
-# USB
-$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
-
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
