@@ -383,27 +383,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # WLAN
-include device/qcom/wlan/kona/wlan.mk
-
 PRODUCT_COPY_FILES += \
-    device/qcom/wlan/kona/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
-PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
-    android.hardware.wifi@1.0-service \
-    fstman \
-    fstman.ini \
-    hostapd \
-    hostapd.accept \
-    hostapd.deny \
-    hostapd_cli \
-    hostapd_default.conf \
-    ipacm \
-    libqsap_sdk \
-    libwifi-hal-qcom \
-    sigma_dut \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    device/qcom/wlan/kona/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
