@@ -1,11 +1,4 @@
 prebuilt_etc_xml {
-        name: "android.hardware.configstore@1.1-service.xml",
-        src: "android.hardware.configstore@1.1-service.xml",
-        sub_dir: "vintf/manifest",
-        vendor: true,
-}
-
-prebuilt_etc_xml {
         name: "vendor.goodix.hardware.biometrics.fingerprint@2.1.xml",
         src: "vendor.goodix.hardware.biometrics.fingerprint@2.1.xml",
         sub_dir: "vintf/manifest",

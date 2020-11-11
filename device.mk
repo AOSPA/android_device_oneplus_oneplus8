@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
 
 # Config Store
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service.xml
+    disable_configstore
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
