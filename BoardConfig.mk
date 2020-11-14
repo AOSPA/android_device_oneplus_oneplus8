@@ -75,10 +75,14 @@ TARGET_SCREEN_DENSITY := 420
 include hardware/qcom/gps/gps_vendor_board.mk
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/oneplus_vendor_framework_compatibility_matrix.xml \
+    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
+
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/manifest.xml \
     $(DEVICE_PATH)/oneplus_manifest.xml
+
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Hacks
