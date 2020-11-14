@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # Kernel
-KERNEL_MODULES_OUT := out/target/product/oneplus8/dlkm/lib/modules
 KERNEL_SD_LLVM_SUPPORT := true
 TARGET_KERNEL_VERSION := 4.19
 
