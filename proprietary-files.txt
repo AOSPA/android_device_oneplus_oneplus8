@@ -888,23 +888,6 @@ vendor/etc/ftm_test_config_kona-qrd-snd-card
 vendor/lib/ftm_fm_lib.so
 vendor/lib64/ftm_fm_lib.so
 
-# Face3D
-vendor/bin/hw/android.hardware.biometrics.face@1.0-service
-vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted
-vendor/etc/init/android.hardware.biometrics.face@1.0-service.rc
-vendor/etc/permissions/android.hardware.biometrics.face.xml
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/android.hardware.biometrics.face@1.0-impl.so
-vendor/lib/libFace3DTA.so
-vendor/lib/libFace3D_hlos.so
-vendor/lib/libQ6MSFR_manager_stub.so
-vendor/lib/libface3d_dev.so
-vendor/lib64/android.hardware.biometrics.face@1.0-impl.so
-vendor/lib64/libFace3DTA.so
-vendor/lib64/libFace3D_hlos.so
-vendor/lib64/libQ6MSFR_manager_stub.so
-vendor/lib64/libface3d_dev.so
-
 # Fingerprint - OOS
 vendor/lib/hw/goodix.fod.kona.so|e04c8ce1fb14581a61d606f3c472e507f4a21ccb
 vendor/lib/hw/goodix.g6.fod.kona.so|68f0819e78dc1177bb50a6ba96bf7c61bd29c9ce
