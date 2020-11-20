@@ -61,6 +61,7 @@ void vendor_load_properties() {
     property_override("ro.product.system.device", "OnePlus8");
     property_override("ro.product.system.model", "OnePlus 8");
   } else if (variant == "11") {
+    property_override("ro.sf.lcd_density", "560");
     property_override("ro.fod.pos.x", "604");
     property_override("ro.fod.pos.y", "2434");
     property_override("ro.fod.size", "232");
