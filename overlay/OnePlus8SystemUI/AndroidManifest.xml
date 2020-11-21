@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 Paranoid Android
+<!-- Copyright (C) 2021 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 
     <overlay
         android:isStatic="true"
-        android:priority="800"
+        android:priority="850"
         android:requiredSystemPropertyName="ro.oneplus.overlay.variant"
         android:requiredSystemPropertyValue="8/T"
         android:targetPackage="com.android.systemui" />
