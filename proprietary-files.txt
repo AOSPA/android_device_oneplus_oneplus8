@@ -920,17 +920,19 @@ vendor/lib64/ftm_fm_lib.so
 
 # Fingerprint - OOS
 vendor/lib/hw/goodix.fod.kona.so|e04c8ce1fb14581a61d606f3c472e507f4a21ccb
-vendor/lib/hw/goodix.g6.fod.kona.so|68f0819e78dc1177bb50a6ba96bf7c61bd29c9ce
 vendor/lib/rfsa/adsp/libproxy_skel.so|7fc7fb2c4ef21b437bf31a99cf1911339c6d2291
 vendor/lib/fp_hal_extension.so|8880e1c9ad7111f0da6023447495eb0446200931
-vendor/lib/libgf_g6_ud_hal.so|74c8fb38ce819ec1c28542d1a730c19f5f8bf796
 vendor/lib/libgf_ud_hal.so|8e038fdf88f48854d5ba051a772ee3806693555b
 vendor/lib64/hw/goodix.fod.kona.so|654af18778dce69a6f86cf55dc39ba1927adad68
-vendor/lib64/hw/goodix.g6.fod.kona.so|425aaeff1953dc3183ec097168916efc4e26054d
 vendor/lib64/fp_hal_extension.so|813a157850b2fecdc981f0fd5644c408101d279b
-vendor/lib64/libgf_g6_ud_hal.so|fa0d19908760a547fecd345ace264121bbf2ae64
 vendor/lib64/libgf_ud_hal.so|ddf8e5f5c16f132a48e5fba24b24b76baed9d713
 vendor/lib64/libhvx_proxy_stub.so|b8971770e3a6aaf0b2992aca04e3a0f162868e67
+
+# Fingerprint - OOS (OnePlus 8 Pro)
+vendor/lib/hw/goodix.g6.fod.kona.so|5b1efdad84ed1cbfc73bcca9bf3da4da17a7a89f
+vendor/lib/libgf_g6_ud_hal.so|ecd2a892874c544354c6657b1b1f48ffe990c064
+vendor/lib64/hw/goodix.g6.fod.kona.so|4325455247f947f2e483abfc84b75d7146d5b275
+vendor/lib64/libgf_g6_ud_hal.so|c7b202ea5ba1e1304f22c0a442ee606b374189d6
 
 # GPS
 vendor/bin/garden_app
