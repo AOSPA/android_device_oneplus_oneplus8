@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fod.pos.x=453 \
+    ro.fod.pos.y=1823 \
+    ro.fod.size=174
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
