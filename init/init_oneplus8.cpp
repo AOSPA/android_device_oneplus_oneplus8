@@ -58,6 +58,10 @@ void vendor_load_properties() {
     property_override("ro.fod.pos.x", "604");
     property_override("ro.fod.pos.y", "2434");
     property_override("ro.fod.size", "232");
+    property_override("ro.product.odm.model", "OnePlus 8 Pro");
+    property_override("ro.product.product.model", "OnePlus 8 Pro");
+    property_override("ro.product.system_ext.model", "OnePlus 8 Pro");
     property_override("ro.product.system.model", "OnePlus 8 Pro");
+    property_override("ro.product.vendor.model", "OnePlus 8 Pro");
   }
 }
