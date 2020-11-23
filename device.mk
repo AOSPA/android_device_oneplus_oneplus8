@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+# Factory Reset Protection
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/config
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
@@ -219,7 +223,8 @@ PRODUCT_PACKAGES += \
     init.oneplus.usb.rc \
     init.qti.dcvs.sh \
     init.qti.ufs.rc \
-    init.target.rc
+    init.target.rc \
+    ueventd.oneplus.rc
 
 # Kernel
 KERNEL_SD_LLVM_SUPPORT := true
