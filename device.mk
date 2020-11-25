@@ -371,9 +371,6 @@ $(call inherit-product, vendor/oneplus/oneplus8/oneplus8-vendor.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
-# Vibrator
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
-
 # WLAN
 PRODUCT_COPY_FILES += \
     device/qcom/wlan/kona/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
