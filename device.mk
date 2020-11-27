@@ -168,6 +168,13 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+# Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.pickup=oneplus.sensor.op_motion_detect
+
 # Factory Reset Protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
