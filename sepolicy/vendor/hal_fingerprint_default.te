@@ -1,0 +1,2 @@
+# Allow the fingerprint service to read & write to /dev/goodix_fp.
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
