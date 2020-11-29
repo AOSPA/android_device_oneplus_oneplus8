@@ -1,2 +1,5 @@
+# Display
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1    u:object_r:vendor_sysfs_graphics:s0
+
 # Vibrator
-genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a    u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                        u:object_r:sysfs_vibrator:s0
