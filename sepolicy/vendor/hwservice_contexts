@@ -1,0 +1,2 @@
+# Vibrator
+vendor.oneplus.hardware.lmvibrator::ILinearMotorVibrator    u:object_r:hal_vibrator_hwservice:s0
