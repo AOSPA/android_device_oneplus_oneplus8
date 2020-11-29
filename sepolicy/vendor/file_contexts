@@ -3,6 +3,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service               u:object_r:hal_camera_default_exec:s0
 
 # DASH
+/dev/dash                                                                                          u:object_r:dash_device:s0
 /(vendor|system/vendor)/bin/dashd                                                                  u:object_r:dashd_exec:s0
 
 # Fingerprint
