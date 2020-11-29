@@ -1,6 +1,9 @@
 # Camera
+/mnt/vendor/persist/camera(/.*)?                                                                   u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/dual_camera_calibration(/.*)?                                                  u:object_r:persist_camera_file:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                      u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service               u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/vl53l1_daemon_main                                                     u:object_r:vl53l1_daemon_main_exec:s0
 
 # DASH
 /dev/dash                                                                                          u:object_r:dash_device:s0

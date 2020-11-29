@@ -1,3 +1,6 @@
+# Camera
+type vl53l1_device, dev_type;
+
 # DASH
 type dash_device, dev_type;
 
