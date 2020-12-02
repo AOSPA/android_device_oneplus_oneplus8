@@ -3,3 +3,19 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                        u:object_r:sysfs_vibrator:s0
+
+# Wakeups
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                                                                                                                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup                                                                                                                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:oem_rf_cable/wakeup                                                                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:oneplus_wlchg/wakeup                                                                                                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/wakeup                                                                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_uc/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/wakeup                                                                                                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-adsp/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-cdsp/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-npu/wakeup                                                                                                                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p_sleepstate/wakeup                                                                                                                   u:object_r:sysfs_wakeup:s0
