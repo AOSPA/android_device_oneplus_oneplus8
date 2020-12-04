@@ -18,10 +18,6 @@ cc_library_static {
     recovery_available: true,
     shared_libs: ["libbase"],
     srcs: ["init_oneplus8.cpp"],
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init"
-    ]
 }
 
 prebuilt_etc {

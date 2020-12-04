@@ -1,67 +1,54 @@
 /*
-   Copyright (c) 2020, The LineageOS Project
-
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions are
-   met:
-    * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
-      copyright notice, this list of conditions and the following
-      disclaimer in the documentation and/or other materials provided
-      with the distribution.
-    * Neither the name of The Linux Foundation nor the names of its
-      contributors may be used to endorse or promote products derived
-      from this software without specific prior written permission.
-
-   THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
-   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
-   ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
-   BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-   BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-   OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
-   IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * Copyright (C) 2020 Paranoid Android
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 #include <android-base/properties.h>
-#include <stdlib.h>
+
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <stdio.h>
 #include <sys/_system_properties.h>
-#include <sys/system_properties.h>
-
-#include "property_service.h"
-#include "vendor_init.h"
-
-#define PROP_VARIANT "ro.boot.prj_version"
 
 using android::base::GetProperty;
 
-void property_override(char const prop[], char const value[]) {
-  prop_info *pi;
+/*
+ * SetProperty does not allow updating read only properties and as a result
+ * does not work for our use case. Write "OverrideProperty" to do practically
+ * the same thing as "SetProperty" without this restriction.
+ */
+void OverrideProperty(const std::string& name, const std::string& value) {
+    size_t valuelen = value.size();
 
-  pi = (prop_info *)__system_property_find(prop);
-  if (pi)
-    __system_property_update(pi, value, strlen(value));
-  else
-    __system_property_add(prop, strlen(prop), value, strlen(value));
+    prop_info* pi = (prop_info*)__system_property_find(name.c_str());
+    if (pi != nullptr) {
+        __system_property_update(pi, value.c_str(), valuelen);
+    } else {
+        __system_property_add(name.c_str(), name.size(), value.c_str(), valuelen);
+    }
 }
 
+/*
+ * Only for read-only properties. Properties that can be wrote to more
+ * than once should be set in a typical init script (e.g. init.oneplus.rc)
+ * after the original property has been set.
+ */
 void vendor_load_properties() {
-  std::string variant = GetProperty(PROP_VARIANT, "");
-  if (variant == "11") {
-    property_override("ro.sf.lcd_density", "560");
-    property_override("ro.fod.pos.x", "604");
-    property_override("ro.fod.pos.y", "2434");
-    property_override("ro.fod.size", "232");
-    property_override("ro.product.odm.model", "OnePlus 8 Pro");
-    property_override("ro.product.product.model", "OnePlus 8 Pro");
-    property_override("ro.product.system_ext.model", "OnePlus 8 Pro");
-    property_override("ro.product.system.model", "OnePlus 8 Pro");
-    property_override("ro.product.vendor.model", "OnePlus 8 Pro");
-  }
+    std::string variant = GetProperty("ro.boot.prj_version", "");
+    if (variant == "11") {
+        OverrideProperty("ro.sf.lcd_density", "560");
+        OverrideProperty("ro.fod.pos.x", "604");
+        OverrideProperty("ro.fod.pos.y", "2434");
+        OverrideProperty("ro.fod.size", "232");
+        OverrideProperty("ro.product.product.model", "OnePlus 8 Pro");
+    }
 }
