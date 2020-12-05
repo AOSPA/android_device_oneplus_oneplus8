@@ -230,9 +230,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oneplus.rc
 
-# Kernel
-KERNEL_SD_LLVM_SUPPORT := true
-
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
