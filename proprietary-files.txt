@@ -885,6 +885,8 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display - OOS
+vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service|6eaa40be20b45c8b5eaf2b213e87f939bc43bed5
+vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc|03b0c962b97fc6cfb99a6b4f838928e7de7e188d
 vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml|fb5815334fe9a6b7b6b81d5d3ab2f8a41afe8043
 vendor/etc/ltm_config_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml|fb5815334fe9a6b7b6b81d5d3ab2f8a41afe8043
 vendor/etc/ltm_config_samsung_ana6706_dsc_cmd_mode_panel.xml|fb5815334fe9a6b7b6b81d5d3ab2f8a41afe8043

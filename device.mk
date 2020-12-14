@@ -96,10 +96,10 @@ PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fod.pos.x=453 \
-    ro.fod.pos.y=1823 \
-    ro.fod.size=174
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.fod.pos.x=453 \
+    persist.fod.pos.y=1823 \
+    persist.fod.size=174
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -166,7 +166,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqdutils \
     libqservice \
-    libtinyxml
+    libtinyxml \
+    vendor.oneplus.hardware.display@1.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
