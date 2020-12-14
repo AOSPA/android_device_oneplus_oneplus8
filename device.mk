@@ -166,7 +166,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqdutils \
     libqservice \
-    libtinyxml
+    libtinyxml \
+    vendor.oneplus.hardware.display@1.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
