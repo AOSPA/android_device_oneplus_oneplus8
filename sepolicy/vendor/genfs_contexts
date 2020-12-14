@@ -1,8 +1,14 @@
 # Display
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1    u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1                   u:object_r:vendor_sysfs_graphics:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha         u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm               u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress    u:object_r:vendor_sysfs_fingerprint:s0
 
 # Vibrator
-genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                        u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                                       u:object_r:sysfs_vibrator:s0
 
 # Wakeups
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                                                                                                                               u:object_r:sysfs_wakeup:s0

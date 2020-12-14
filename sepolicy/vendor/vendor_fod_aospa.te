@@ -1,0 +1,5 @@
+allow vendor_fod hal_display_hwservice:hwservice_manager find;
+allow vendor_fod vendor_sysfs_graphics:dir search;
+allow vendor_fod vendor_sysfs_fingerprint:file rw_file_perms;
+
+binder_call(vendor_fod, hal_display)
