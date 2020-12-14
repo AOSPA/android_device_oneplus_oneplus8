@@ -1,2 +1,24 @@
 # Allow the fingerprint service to read & write to /dev/goodix_fp.
 allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to read & write to /proc/touchpanel.
+allow hal_fingerprint_default proc_touchpanel:dir search;
+allow hal_fingerprint_default proc_touchpanel:file rw_file_perms;
+
+# Allow the fingerprint service to create the netlink socket.
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+# Allow the fingerprint service to read & write to /dev/qseecom.
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to read & write to /dev/adsprpc-smd.
+allow hal_fingerprint_default vendor_qdsp_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to read & write to /dev/adsprpc-smd-secure.
+allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to set the calibration status.
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+# Allow the fingerprint service to retrieve vendor.fastrpc.*.
+get_prop(hal_fingerprint_default, vendor_adsprpc_prop)

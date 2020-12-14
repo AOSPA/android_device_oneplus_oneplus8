@@ -1,0 +1,5 @@
+# Fingerprint
+vendor.fod.pos.x                  u:object_r:vendor_fingerprint_prop:s0
+vendor.fod.pos.y                  u:object_r:vendor_fingerprint_prop:s0
+vendor.fod.size                   u:object_r:vendor_fingerprint_prop:s0
+vendor.calibration.fingerprint    u:object_r:vendor_fingerprint_prop:s0
