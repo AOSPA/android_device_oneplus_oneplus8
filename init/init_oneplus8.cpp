@@ -46,6 +46,11 @@ void vendor_load_properties() {
     std::string variant = GetProperty("ro.boot.prj_version", "");
     if (variant == "11") {
         OverrideProperty("ro.sf.lcd_density", "560");
+        OverrideProperty("ro.product.product.device", "OnePlus8Pro");
         OverrideProperty("ro.product.product.model", "OnePlus 8 Pro");
+    } else if (variant == "12") {
+        OverrideProperty("ro.product.product.device", "OnePlus8");
+    } else if (variant == "14") {
+        OverrideProperty("ro.product.product.device", "OnePlus8T");
     }
 }
