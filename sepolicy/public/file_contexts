@@ -1,0 +1,2 @@
+# Persist
+/mnt/vendor/persist/engineermode(/.*)?    u:object_r:persist_engineer_file:s0

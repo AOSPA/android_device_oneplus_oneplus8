@@ -1,6 +1,7 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                   u:object_r:persist_camera_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?                                                  u:object_r:persist_camera_file:s0
+/sys/module/stmvl53l1(/.*)?                                                                        u:object_r:sysfs_vl53l1:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                      u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service               u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/vl53l1_daemon_main                                                     u:object_r:vl53l1_daemon_main_exec:s0
@@ -18,6 +19,9 @@
 # Fingerprint
 /dev/goodix_fp                                                                                     u:object_r:fingerprint_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service.oneplus8    u:object_r:hal_fingerprint_default_exec:s0
+
+# Project Info
+/sys/project_info(/.*)?                                                                            u:object_r:sysfs_project_info:s0
 
 # Vibrator
 /vendor/bin/hw/vendor\.oneplus\.hardware\.lmvibrator@1\.0-service                                  u:object_r:hal_vibrator_default_exec:s0

@@ -3,3 +3,6 @@ type persist_camera_file, file_type;
 
 # Display
 type proc_touchpanel, fs_type, proc_type;
+
+# Project Info
+type sysfs_project_info, sysfs_type, fs_type;
