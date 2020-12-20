@@ -707,6 +707,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
+    <path name="low-latency-playback tert_i2s">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
     <path name="low-latency-playback speaker-protected">
         <path name="low-latency-playback" />
     </path>
