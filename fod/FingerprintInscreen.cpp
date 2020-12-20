@@ -29,9 +29,9 @@
 #define OP_DISPLAY_NOTIFY_PRESS 9
 #define OP_DISPLAY_SET_DIM 10
 
-#define FOD_POS_X "persist.fod.pos.x"
-#define FOD_POS_Y "persist.fod.pos.y"
-#define FOD_SIZE "persist.fod.size"
+#define FOD_POS_X "persist.sys.fod.pos.x"
+#define FOD_POS_Y "persist.sys.fod.pos.y"
+#define FOD_SIZE "persist.sys.fod.size"
 
 using android::base::GetProperty;
 
