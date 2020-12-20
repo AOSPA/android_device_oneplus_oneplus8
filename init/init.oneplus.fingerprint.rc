@@ -31,6 +31,6 @@ on init
     setprop vendor.boot.hw_version ${ro.boot.hw_version}
 
 on init && property:ro.boot.prj_version=11
-    setprop persist.fod.pos.x 604
-    setprop persist.fod.pos.y 2434
-    setprop persist.fod.size 232
+    setprop persist.sys.fod.pos.x 604
+    setprop persist.sys.fod.pos.y 2434
+    setprop persist.sys.fod.size 232

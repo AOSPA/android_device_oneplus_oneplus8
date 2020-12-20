@@ -91,9 +91,9 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.fingerprint.extension@1.0.vendor
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.fod.pos.x=453 \
-    persist.fod.pos.y=1823 \
-    persist.fod.size=174
+    persist.sys.fod.pos.x=453 \
+    persist.sys.fod.pos.y=1823 \
+    persist.sys.fod.size=174
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.boot.fingerprintbstate=orange
