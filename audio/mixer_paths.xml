@@ -597,7 +597,7 @@
     </path>
 
     <path name="deep-buffer-playback tert_i2s">
-        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <path name="deep-buffer-playback">
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
@@ -708,7 +708,7 @@
     </path>
 
     <path name="low-latency-playback tert_i2s">
-        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <path name="low-latency-playback">
     </path>
 
     <path name="low-latency-playback speaker-protected">
@@ -822,6 +822,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
 
+    <path name="audio-ull-playback tert_i2s">
+        <path name="audio-ull-playback"/>
+    </path>
+
     <path name="audio-ull-playback speaker-protected">
         <path name="audio-ull-playback" />
     </path>
@@ -929,6 +933,10 @@
 
     <path name="compress-offload-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback tert_i2s">
+        <path name="compress-offload-playback"/>
     </path>
 
     <path name="compress-offload-playback speaker-protected">
@@ -1054,6 +1062,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
 
+    <path name="compress-offload-playback2 tert_i2s">
+        <path name="compress-offload-playback2"/>
+    </path>
+
     <path name="compress-offload-playback2 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia7" value="1" />
     </path>
@@ -1162,6 +1174,10 @@
          <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
+    <path name="compress-offload-playback3 tert_i2s">
+        <path name="compress-offload-playback3"/>
+    </path>
+
     <path name="compress-offload-playback3 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia10" value="1" />
     </path>
@@ -1247,6 +1263,10 @@
 
     <path name="compress-offload-playback4">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia11" value="1" />
+    </path>
+
+    <path name="compress-offload-playback4 tert_i2s">
+        <path name="compress-offload-playback4"/>
     </path>
 
     <path name="compress-offload-playback4 display-port">
@@ -1336,6 +1356,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
 
+    <path name="compress-offload-playback5 tert_i2s">
+        <path name="compress-offload-playback5"/>
+    </path>
+
     <path name="compress-offload-playback5 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia12" value="1" />
     </path>
@@ -1421,6 +1445,10 @@
 
     <path name="compress-offload-playback6">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia13" value="1" />
+    </path>
+
+    <path name="compress-offload-playback6 tert_i2s">
+        <path name="compress-offload-playback6"/>
     </path>
 
     <path name="compress-offload-playback6 display-port">
@@ -1510,6 +1538,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
 
+    <path name="compress-offload-playback7 tert_i2s">
+        <path name="compress-offload-playback7"/>
+    </path>
+
     <path name="compress-offload-playback7 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia14" value="1" />
     </path>
@@ -1597,6 +1629,10 @@
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
 
+    <path name="compress-offload-playback8 tert_i2s">
+        <path name="compress-offload-playback8"/>
+    </path>
+
     <path name="compress-offload-playback8 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia15" value="1" />
     </path>
@@ -1682,6 +1718,10 @@
 
     <path name="compress-offload-playback9">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
+    </path>
+
+    <path name="compress-offload-playback9 tert_i2s">
+        <path name="compress-offload-playback9"/>
     </path>
 
     <path name="compress-offload-playback9 display-port">
@@ -2092,6 +2132,12 @@
         <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
     </path>
 
+    <path name="compress-voip-call tert_i2s">
+        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_RX" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
+    </path>
+
     <path name="compress-voip-call bt-a2dp">
         <ctl name="SLIM_7_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="1" />
@@ -2136,6 +2182,12 @@
     </path>
 
     <path name="voicemmode1-call">
+        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_RX" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
+    </path>
+
+    <path name="voicemmode1-call tert_i2s">
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_RX" />
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
@@ -2223,6 +2275,12 @@
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 
+    <path name="voicemmode2-call tert_i2s">
+        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_RX" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
+    </path>
+
     <path name="voicemmode2-call hearing-aid">
         <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
@@ -2294,6 +2352,10 @@
     <!-- VoIP Rx settings -->
     <path name="audio-playback-voip">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="audio-playback-voip tert_i2s">
+        <path name="audio-playback-voip"/>
     </path>
 
     <path name="audio-playback-voip headphones">
@@ -3237,6 +3299,10 @@
 
     <path name="mmap-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
+    </path>
+
+    <path name="mmap-playback tert_i2s">
+        <path name="mmap-playback"/>
     </path>
 
     <path name="mmap-playback headphones">
