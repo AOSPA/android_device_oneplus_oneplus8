@@ -29,11 +29,7 @@
 #define OP_DISPLAY_NOTIFY_PRESS 9
 #define OP_DISPLAY_SET_DIM 10
 
-#define FOD_POS_X "persist.sys.fod.pos.x"
-#define FOD_POS_Y "persist.sys.fod.pos.y"
-#define FOD_SIZE "persist.sys.fod.size"
-
-using android::base::GetProperty;
+using android::base::GetIntProperty;
 
 namespace vendor {
 namespace aospa {
@@ -127,21 +123,21 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    std::string str_fodPosX = GetProperty(FOD_POS_X, "");
-    int i_fodPosX = std::stoi (str_fodPosX);
-    return i_fodPosX;
+    auto fodPosX = GetIntProperty("persist.sys.fod.pos.x", 0);
+
+    return fodPosX;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    std::string str_fodPosY = GetProperty(FOD_POS_Y, "");
-    int i_fodPosY = std::stoi (str_fodPosY);
-    return i_fodPosY;
+    auto fodPosY = GetIntProperty("persist.sys.fod.pos.y", 0);
+
+    return fodPosY;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    std::string str_fodSize = GetProperty(FOD_SIZE, "");
-    int i_fodSize = std::stoi (str_fodSize);
-    return i_fodSize;
+    auto fodSize = GetIntProperty("persist.sys.fod.size", 0);
+
+    return fodSize;
 }
 
 }  // namespace implementation
