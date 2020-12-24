@@ -31,4 +31,9 @@
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 
+    <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
+    <dimen name="config_rounded_mask_size">94px</dimen>
+    <dimen name="config_rounded_mask_size_top">@dimen/config_rounded_mask_size</dimen>
+    <dimen name="config_rounded_mask_size_bottom">@dimen/config_rounded_mask_size</dimen>
+
 </resources>

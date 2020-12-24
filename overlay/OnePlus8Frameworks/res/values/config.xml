@@ -45,6 +45,13 @@
         Z
         @left
     </string>
+
+    <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
+         one single bounding rect per device edge to the app via
+         {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
+         appearance of the cutout as much as possible, and may be smaller than
+         config_mainBuiltInDisplayCutout
+         -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
         M 0.0, 0.0
         h 164
