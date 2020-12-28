@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae748de1_032b816f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "Made some comments.\nProbably keep this commit as is and put those changes in a separate one / separate ones.\n\nAs for further improvements, these come to mind:\nhttps://gerrit.aospa.co/c/AOSPA/android_device_leeco_zl1/+/3948\nhttps://gerrit.aospa.co/c/AOSPA/android_device_oneplus_sm8150-common/+/10445 (adjust the margin from 3 to 5 though. I had improved the tuning later)\n",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d93cdc62_5c13852f",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "This should probably be kept enabled if we scrap the low tx power limits",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83a974af_5867a89c",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "We should keep runtime pm enabled as this has a huge impact on power consumption.\nThe feature sometimes causes issues, so the delay might be increased to 2000 or 2500. I would recommend doing that directly.",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6415a22_b2c69803",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "I\u0027d remove this change and keep RA Filtering offload enabled.",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6f55f92_03144e70",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "There isn\u0027t actually a reason for this as there is a package filter already. So we can actually keep this one disabled (value 1).",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f56b05a6_83ad2b79",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 369,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "This is dirty and should be removed. The default is reporting the actual link speed and it should be kept that way.",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd73048d_900fe8aa",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "This isn\u0027t known to cause issues, so can be left enabled",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5c367bd_897cd0ac",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "remove this, the default value is better",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "627e3617_86906a40",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-28T22:56:17Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
