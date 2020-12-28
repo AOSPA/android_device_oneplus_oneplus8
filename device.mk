@@ -364,4 +364,4 @@ PRODUCT_COPY_FILES += \
 
 # WLAN
 PRODUCT_COPY_FILES += \
-    device/qcom/wlan/kona/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+    $(LOCAL_PATH)/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
