@@ -18,6 +18,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea9ad278_bffdee3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae748de1_032b816f",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d93cdc62_5c13852f",
@@ -31,6 +49,24 @@
       "writtenOn": "2020-12-28T22:56:17Z",
       "side": 1,
       "message": "This should probably be kept enabled if we scrap the low tx power limits",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9384b973_2b392f73",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d93cdc62_5c13852f",
       "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
@@ -52,6 +88,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5212a3df_20006399",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83a974af_5867a89c",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b6415a22_b2c69803",
@@ -65,6 +119,24 @@
       "writtenOn": "2020-12-28T22:56:17Z",
       "side": 1,
       "message": "I\u0027d remove this change and keep RA Filtering offload enabled.",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f703118_e79dc70a",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6415a22_b2c69803",
       "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
@@ -86,6 +158,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "02f1ca96_2ed31fbb",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6f55f92_03144e70",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f56b05a6_83ad2b79",
@@ -99,6 +189,24 @@
       "writtenOn": "2020-12-28T22:56:17Z",
       "side": 1,
       "message": "This is dirty and should be removed. The default is reporting the actual link speed and it should be kept that way.",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16df40d3_c33f8e33",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 369,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f56b05a6_83ad2b79",
       "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
@@ -120,6 +228,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "911ed330_bf60152d",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dd73048d_900fe8aa",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5c367bd_897cd0ac",
@@ -137,6 +263,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "878d4b03_6c5cb495",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e5c367bd_897cd0ac",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "627e3617_86906a40",
@@ -150,6 +294,24 @@
       "writtenOn": "2020-12-28T22:56:17Z",
       "side": 1,
       "message": "same here",
+      "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49e5faa4_3f0d301b",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-12-29T07:31:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "627e3617_86906a40",
       "revId": "7a2f0cd7ce17b1837532d8923c241a3ce9082587",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
