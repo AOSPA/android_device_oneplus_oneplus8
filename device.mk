@@ -292,10 +292,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     persist.vendor.radio.procedure_bytes=SKIP
 
-# Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.recovery.ui.margin_height=150
-
 # Enable advanced network scanning.
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.enableadvancedscan=true
