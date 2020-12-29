@@ -286,22 +286,13 @@ TARGET_COMMON_QTI_COMPONENTS := all
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
-    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
-    persist.vendor.radio.procedure_bytes=SKIP
-
-# Enable advanced network scanning.
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.radio.enableadvancedscan=true
-
-ifeq ($(TARGET_FWK_SUPPORTS_FULL_VALUEADDS),true)
-    PRODUCT_PROPERTY_OVERRIDES += persist.radio.multisim.config=dsds
-    PRODUCT_PROPERTY_OVERRIDES += persist.vendor.radio.rat_on=combine
-else
-    PRODUCT_PROPERTY_OVERRIDES += persist.vendor.radio.rat_on=""
-endif
+    persist.vendor.radio.enableadvancedscan=true \
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1
 
 # Sensors
 PRODUCT_COPY_FILES += \
