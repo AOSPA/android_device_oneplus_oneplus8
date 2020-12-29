@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4faad341_46906686",
+        "filename": "wlan/WCNSS_qcom_cfg.ini",
+        "patchSetId": 2
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-12-29T00:51:15Z",
+      "side": 1,
+      "message": "Adjust the comment here to 5dBm",
+      "revId": "367b00bab4fe99ad27568095708a03373abf95ac",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
