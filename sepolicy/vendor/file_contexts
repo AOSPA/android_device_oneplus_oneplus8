@@ -20,6 +20,9 @@
 /dev/goodix_fp                                                                                     u:object_r:fingerprint_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service.oneplus8    u:object_r:hal_fingerprint_default_exec:s0
 
+# HVDCP
+/mnt/vendor/persist/hvdcp_opti/soh_info.txt                                                        u:object_r:vendor_persist_hvdcp_file:s0
+
 # Project Info
 /sys/project_info(/.*)?                                                                            u:object_r:sysfs_project_info:s0
 
