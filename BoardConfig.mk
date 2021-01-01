@@ -51,6 +51,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
+# Biometrics
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
 
@@ -75,6 +78,9 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/oneplus_manifest.xml
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
+# Hacks
+BUILD_BROKEN_DUP_RULES := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus8
