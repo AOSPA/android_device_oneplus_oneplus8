@@ -63,6 +63,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Display
+TARGET_DISPLAY_HAS_NO_MASK_LAYER := true
 TARGET_SCREEN_DENSITY := 420
 
 # HIDL
@@ -75,6 +76,9 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/oneplus_manifest.xml
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
+# Hacks
+BUILD_BROKEN_DUP_RULES := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus8
