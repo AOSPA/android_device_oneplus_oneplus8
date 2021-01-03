@@ -75,15 +75,6 @@ vendor/firmware/a650_zap.b01|c2f278660749b4ec25ce0d6ce29045aa9782260f
 vendor/firmware/a650_zap.elf|b38def21e19f461395daaae17ac65d31aa6c007f
 vendor/firmware/a650_zap.mdt|629ba1001c0921bede654be67f9e83f7c0689f2e
 
-# Alarm
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
 # Audio
 vendor/bin/audioflacapp
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
