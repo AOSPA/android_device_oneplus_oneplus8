@@ -722,12 +722,6 @@ vendor/lib64/camera/com.qti.tuned.semco_imx689.bin|9cb009994e9d88c9e46bd91a2082c
 vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin|53e8d8acd176bb3b3f5f33030f5abd49fcbb4c4f
 vendor/lib64/camera/com.qti.tuned.shine_gc5035.bin|ebd29c7b85614038c9c94eb290febbafddce9d33
 
-# Charger
-vendor/bin/hvdcp_opti
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-vendor/etc/charger_fstab.qti
-
 # Config Store
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
