@@ -23,6 +23,10 @@ allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
 # Allow the fingerprint service to read & write to /dev/adsprpc-smd-secure.
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 
+# Allow the fingerprint service to find fingerprint extensions.
+add_hwservice(hal_fingerprint_default, hal_oneplus_fingerprint_hwservice)
+allow hal_fingerprint_default hal_oneplus_fingerprint_hwservice:hwservice_manager find;
+
 # Allow binder communication with the performance HAL.
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 

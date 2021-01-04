@@ -6,8 +6,8 @@ vendor.oneplus.hardware.camera::IOnePlusCameraProvider                     u:obj
 vendor.oneplus.hardware.display::IOneplusDisplay                           u:object_r:hal_display_hwservice:s0
 
 # Fingerprint
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_fingerprint_hwservice:s0
-vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_oneplus_fingerprint_hwservice:s0
+vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_oneplus_fingerprint_hwservice:s0
 
 # Vibrator
 vendor.oneplus.hardware.lmvibrator::ILinearMotorVibrator                   u:object_r:hal_vibrator_hwservice:s0
