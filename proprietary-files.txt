@@ -696,10 +696,10 @@ vendor/lib/camera/com.qti.sensormodule.semco_imx689.bin|837aa0a083edc65c467b1702
 vendor/lib/camera/com.qti.sensormodule.semco_imx689_MP.bin|e2aac191f2d21663b6f740afca2b61c732d8b338
 vendor/lib/camera/com.qti.sensormodule.semco_s5k3m5.bin|658a9c8120f5e53d99b11e09fe045bac5f2e8d6a
 vendor/lib/camera/com.qti.sensormodule.shine_gc5035.bin|d4f7ff173fc0ad223a6c13b8a156437256f28a19
-vendor/lib/camera/com.qti.tuned.semco_imx586_BG.bin|3b426671f6835979ec6a907a5bd5544e422bfc24
-vendor/lib/camera/com.qti.tuned.semco_imx689.bin|9cb009994e9d88c9e46bd91a2082c7e5f4181edc
-vendor/lib/camera/com.qti.tuned.semco_s5k3m5.bin|53e8d8acd176bb3b3f5f33030f5abd49fcbb4c4f
-vendor/lib/camera/com.qti.tuned.shine_gc5035.bin|ebd29c7b85614038c9c94eb290febbafddce9d33
+vendor/lib/camera/com.qti.tuned.semco_imx586_BG.bin|ee3d33c45a7b5eb7290a14957f1dc71ae883d9d1
+vendor/lib/camera/com.qti.tuned.semco_imx689.bin|c0e906d0e82456a3b046dbc1c54dfc81dbdbfb65
+vendor/lib/camera/com.qti.tuned.semco_s5k3m5.bin|acd02b06de9080c1ccf7a2b15904a2633cbdced5
+vendor/lib/camera/com.qti.tuned.shine_gc5035.bin|2e621ad82d8a8b696ebaf6e4e53969743af433c0
 vendor/lib64/camera/com.qti.sensor.gc5035.so|7a37661f0b7453963a14ad53d18c9d79d469b793
 vendor/lib64/camera/com.qti.sensor.imx689.so|d1ab572336ed628497de52cb0428cf38940c8d7c
 vendor/lib64/camera/com.qti.sensor.s5k3m5.so|8939e6a0a67c44502fa7c775d2e73bf9c59992e4
@@ -708,10 +708,10 @@ vendor/lib64/camera/com.qti.sensormodule.semco_imx689.bin|837aa0a083edc65c467b17
 vendor/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin|e2aac191f2d21663b6f740afca2b61c732d8b338
 vendor/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin|658a9c8120f5e53d99b11e09fe045bac5f2e8d6a
 vendor/lib64/camera/com.qti.sensormodule.shine_gc5035.bin|d4f7ff173fc0ad223a6c13b8a156437256f28a19
-vendor/lib64/camera/com.qti.tuned.semco_imx586_BG.bin|3b426671f6835979ec6a907a5bd5544e422bfc24
-vendor/lib64/camera/com.qti.tuned.semco_imx689.bin|9cb009994e9d88c9e46bd91a2082c7e5f4181edc
-vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin|53e8d8acd176bb3b3f5f33030f5abd49fcbb4c4f
-vendor/lib64/camera/com.qti.tuned.shine_gc5035.bin|ebd29c7b85614038c9c94eb290febbafddce9d33
+vendor/lib64/camera/com.qti.tuned.semco_imx586_BG.bin|ee3d33c45a7b5eb7290a14957f1dc71ae883d9d1
+vendor/lib64/camera/com.qti.tuned.semco_imx689.bin|c0e906d0e82456a3b046dbc1c54dfc81dbdbfb65
+vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin|acd02b06de9080c1ccf7a2b15904a2633cbdced5
+vendor/lib64/camera/com.qti.tuned.shine_gc5035.bin|2e621ad82d8a8b696ebaf6e4e53969743af433c0
 
 # Config Store
 vendor/bin/hw/capabilityconfigstoretest
@@ -930,9 +930,9 @@ vendor/lib64/libhvx_proxy_stub.so|b8971770e3a6aaf0b2992aca04e3a0f162868e67
 
 # Fingerprint - OOS (OnePlus 8 Pro)
 vendor/lib/hw/goodix.g6.fod.kona.so|5b1efdad84ed1cbfc73bcca9bf3da4da17a7a89f
-vendor/lib/libgf_g6_ud_hal.so|c027299eefb6279739041a4a5e2b2b5c2f0643db
+vendor/lib/libgf_g6_ud_hal.so|110e4fb3fc9b7922347843e3ef6d7aaaf7cdfe6c
 vendor/lib64/hw/goodix.g6.fod.kona.so|4325455247f947f2e483abfc84b75d7146d5b275
-vendor/lib64/libgf_g6_ud_hal.so|9a84a9d226b857edf8056acbf700568949ea1f14
+vendor/lib64/libgf_g6_ud_hal.so|0a0002d25995a8a79a7d15e46bdd781f84bdf38b
 
 # GPS
 vendor/bin/garden_app
