@@ -27,6 +27,10 @@ allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 add_hwservice(hal_fingerprint_default, hal_oneplus_fingerprint_hwservice)
 allow hal_fingerprint_default hal_oneplus_fingerprint_hwservice:hwservice_manager find;
 
+# Allow the fingerprint service to read & write to fpqrcode.
+r_dir_file(hal_fingerprint_default, vendor_persist_fingerprint_file)
+allow hal_fingerprint_default vendor_persist_fingerprint_file:file rw_file_perms;
+
 # Allow binder communication with the performance HAL.
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
