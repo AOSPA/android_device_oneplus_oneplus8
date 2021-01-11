@@ -225,9 +225,9 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/bin/ccid_daemon
 
 # CNE
--vendor/app/CACertService/CACertService.apk;PRESIGNED
--vendor/app/CneApp/CneApp.apk;PRESIGNED
--vendor/app/IWlanService/IWlanService.apk;PRESIGNED
+-vendor/app/CACertService/CACertService.apk
+-vendor/app/CneApp/CneApp.apk
+-vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
 vendor/bin/mutualex
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
@@ -722,7 +722,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
 -vendor/app/SSGTelemetryService/SSGTelemetryService.apk;PRESIGNED
--vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk;PRESIGNED
+-vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -1184,7 +1184,7 @@ vendor/lib/libopenvx.so
 vendor/lib64/libopenvx.so
 
 # PASR HAL
--vendor/app/pasrservice/pasrservice.apk;PRESIGNED
+-vendor/app/pasrservice/pasrservice.apk
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
 vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
@@ -1277,7 +1277,7 @@ vendor/etc/powerhint.xml|3a5d77579599e02a6552c31ec42d5d428db9da74
 vendor/etc/public.libraries.txt
 
 # QCC-TR-UI
--vendor/app/QCC-TR-UI/QCC-TR-UI.apk;PRESIGNED
+-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
 vendor/bin/qcc-trd
 
 # QCC VND HAL
@@ -1870,7 +1870,7 @@ vendor/etc/thermal-engine.conf
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
 # Time Services
--vendor/app/TimeService/TimeService.apk;PRESIGNED
+-vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
