@@ -837,7 +837,6 @@ vendor/lib/libdisp-aba.so|50930da725ac39ab607bb1eb4d5909cb90f13a68
 vendor/lib/libdisplayqos.so|a86c6e92f642713671ca4136ce2e020a4379800a
 vendor/lib/libdisplayskuutils.so|b6fc809cfcd407f390f5d7851fee0ec13db5a6ad
 vendor/lib/libdpps.so|cbda64aa42329553e2427c002db29002cdeb613b
-vendor/lib/libdrmutils.so|b4eddab30a2197f41d9d38a0a35134d90bd78bfa
 vendor/lib/libhdr_tm.so|e08936fea603de56e1e882b3e20cd43098f7f5a4
 vendor/lib/libmm-hdcpmgr.so|1eb034913895e237930c72c1ef017fbcdb11d286
 vendor/lib/libpwirisfeature.so|92f55d1233f6201635dfd6801a402cf05506e12a
@@ -866,7 +865,6 @@ vendor/lib64/libdisp-aba.so|f7231a9254d985b43d8ad998e2adf35f61914534
 vendor/lib64/libdisplayqos.so|d1dfede9c01dc48025a8ecd5c191015051e7cf9c
 vendor/lib64/libdisplayskuutils.so|5b55c8a9feceedb021e77a7fee29a82f9ea8fb2b
 vendor/lib64/libdpps.so|575a96d19898e6fc41959c687c00d83f8d9c6018
-vendor/lib64/libdrmutils.so|8cf3a4289a51385fcc915ffb86c6642c2bc94edd
 vendor/lib64/libhdr_tm.so|0542612a3061a841b6e03374b48f0a207e10431b
 vendor/lib64/libmm-hdcpmgr.so|7ef011b342a803fd7ef6055fb5acabfc34160237
 vendor/lib64/libpwirisfeature.so|7ce7637803dc09f5dbe33fb36b0d43b8fbeba70e
