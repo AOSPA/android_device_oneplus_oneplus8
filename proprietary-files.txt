@@ -974,6 +974,7 @@ vendor/lib/libloc_api_v02.so
 vendor/lib/libloc_socket.so
 vendor/lib/liblocationservice.so
 vendor/lib/liblocationservice_glue.so
+vendor/lib/liblocdiagiface.so|35eab97f70e6660d778a2b5ac70428b80e4b0b47
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_wifihal.so
 vendor/lib/libqcc_file_agent.so
@@ -1009,6 +1010,7 @@ vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
+vendor/lib64/liblocdiagiface.so|31f88106b5aeceff4264f06ce5299455c3058499
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libqcc_file_agent.so
