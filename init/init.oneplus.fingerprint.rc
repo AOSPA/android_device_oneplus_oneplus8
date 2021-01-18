@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,8 +29,3 @@ on boot
 on init
     setprop vendor.boot.verifiedbootstate ${ro.boot.verifiedbootstate}
     setprop vendor.boot.hw_version ${ro.boot.hw_version}
-
-on init && property:ro.boot.prj_version=11
-    setprop persist.sys.fod.pos.x 604
-    setprop persist.sys.fod.pos.y 2434
-    setprop persist.sys.fod.size 232

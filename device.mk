@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -252,15 +252,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPAOnePlus8ProSystemUI \
     AOSPAOnePlus8SeriesFrameworks \
     AOSPAOnePlus8SeriesSettings \
     AOSPAOnePlus8SeriesSystemUI \
     AOSPAOnePlus8SystemUI \
     FrameworksResTarget \
     OnePlus8Frameworks \
-    OnePlus8ProFrameworks \
-    OnePlus8ProSystemUI \
     OnePlus8SeriesFrameworks \
     OnePlus8SeriesSystemUI \
     OnePlus8SystemUI \
