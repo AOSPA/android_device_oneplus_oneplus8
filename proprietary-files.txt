@@ -482,24 +482,6 @@ vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|4c3ca198c728849580d9dd
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|7a804b98e89d12a334ffcef7dceffbb1130b3494
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1ff5e9102a4eeb4442f4d89fe74bf19c93402d90
 
-# Camera - OOS (OnePlus 8 Pro)
-vendor/etc/camera/calibrationOutput_IR.bin|4ee9dfc011483bcb729ff81f6d387fa8c7888ee7
-vendor/etc/camera/calibrationOutput_wt.bin|c9b3b7b09f41d69849d05aa359901cb114604970
-vendor/etc/init/calibrationOutput_IR.rc|8b79252c6a7b170fad45b95270a34e9b2638ac8a
-vendor/etc/init/calibrationOutput_wt.rc|2559cf2fd010d6be28147e5590d9cda1ff25ddfe
-vendor/lib64/camera/com.qti.sensor.gc5035.so|7a37661f0b7453963a14ad53d18c9d79d469b793
-vendor/lib64/camera/com.qti.sensor.imx689.so|d1ab572336ed628497de52cb0428cf38940c8d7c
-vendor/lib64/camera/com.qti.sensor.s5k3m5.so|8939e6a0a67c44502fa7c775d2e73bf9c59992e4
-vendor/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin|536394e3b1a250eabdf63b0a1fa590cf601b6d56
-vendor/lib64/camera/com.qti.sensormodule.semco_imx689.bin|837aa0a083edc65c467b17025bd9524356c874d9
-vendor/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin|e2aac191f2d21663b6f740afca2b61c732d8b338
-vendor/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin|658a9c8120f5e53d99b11e09fe045bac5f2e8d6a
-vendor/lib64/camera/com.qti.sensormodule.shine_gc5035.bin|d4f7ff173fc0ad223a6c13b8a156437256f28a19
-vendor/lib64/camera/com.qti.tuned.semco_imx586_BG.bin|ee3d33c45a7b5eb7290a14957f1dc71ae883d9d1
-vendor/lib64/camera/com.qti.tuned.semco_imx689.bin|c0e906d0e82456a3b046dbc1c54dfc81dbdbfb65
-vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin|acd02b06de9080c1ccf7a2b15904a2633cbdced5
-vendor/lib64/camera/com.qti.tuned.shine_gc5035.bin|2e621ad82d8a8b696ebaf6e4e53969743af433c0
-
 # Config Store
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -662,10 +644,6 @@ vendor/lib64/hw/goodix.fod.kona.so|d798385cc23c29f48ce8ab7cac0aecd1855a8f69
 vendor/lib64/fp_hal_extension.so|348eb1bda78daa7c1595b6f474045d371c499162
 vendor/lib64/libgf_ud_hal.so|c9605596b1268e6c5927ec54f7efad151ebcf867
 vendor/lib64/libhvx_proxy_stub.so|b8971770e3a6aaf0b2992aca04e3a0f162868e67
-
-# Fingerprint - OOS (OnePlus 8 Pro)
-vendor/lib64/hw/goodix.g6.fod.kona.so|4325455247f947f2e483abfc84b75d7146d5b275
-vendor/lib64/libgf_g6_ud_hal.so|0a0002d25995a8a79a7d15e46bdd781f84bdf38b
 
 # GPS
 vendor/bin/garden_app
