@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -111,7 +111,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := OnePlus8,OnePlus8Pro,oneplus8,oneplus8pro
+TARGET_OTA_ASSERT_DEVICE := OnePlus8,oneplus8
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x6000000
