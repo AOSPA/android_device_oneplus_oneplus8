@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Paranoid Android
+ * Copyright (C) 2021 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,9 +45,7 @@ void OverrideProperty(const std::string& name, const std::string& value) {
 void vendor_load_properties() {
     std::string variant = GetProperty("ro.boot.prj_version", "");
     if (variant == "11") {
-        OverrideProperty("ro.sf.lcd_density", "560");
         OverrideProperty("ro.product.product.device", "OnePlus8Pro");
-        OverrideProperty("ro.product.product.model", "OnePlus 8 Pro");
     } else if (variant == "12") {
         OverrideProperty("ro.product.product.device", "OnePlus8");
     } else if (variant == "14") {
