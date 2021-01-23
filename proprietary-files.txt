@@ -1469,6 +1469,7 @@ vendor/firmware/aw8697_haptic_168.bin|f57fc6caf1c4b13046b80c57f715b70e8309a653
 vendor/firmware/aw8697_haptic_170.bin|cf370271e08ab5a3fcac670f9133a48a55a56335
 vendor/firmware/aw8697_haptic_172.bin|cf370271e08ab5a3fcac670f9133a48a55a56335
 vendor/firmware/aw8697_haptic_174.bin|f3995f1ffe096717fcd4fc8d5829d773bacb29ba
+vendor/firmware/aw8697_rtp.bin|b2bf42d9333fffbb7f00da38d1bd1b6d5a85014a
 
 # WFD
 vendor/bin/wfdhdcphalservice
