@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c73371a9_12298d99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2021-01-27T14:53:19Z",
+      "side": 1,
+      "message": "doesn\u0027t this do the exact opposite? also, why?",
+      "revId": "192b3ad4ff08e1b878deffe80b6b76d923b63a80",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
