@@ -222,6 +222,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.thermal.rc \
     init.oneplus.ufs.rc \
     init.oneplus.usb.rc \
+    init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.ufs.rc \
     init.target.rc \
