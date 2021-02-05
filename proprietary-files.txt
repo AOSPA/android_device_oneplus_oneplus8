@@ -20,10 +20,6 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so|871b919df043ca14d61102b8f680dd7bc684
 
 # Adreno
 -vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
-vendor/firmware/a650_sqe.fw
-vendor/firmware/a650_gmu.bin
-vendor/firmware/a650_zap.b00
-vendor/firmware/a650_zap.b02
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -62,7 +58,11 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Adreno - OOS
+vendor/firmware/a650_sqe.fw|12a8b97c9dd9de7eb759dada1ae11c5cdc08a2a2
+vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
+vendor/firmware/a650_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
 vendor/firmware/a650_zap.b01|76a877893b3e8fb0d7b9d98c31ef012669fa42bc
+vendor/firmware/a650_zap.b02|270bae014df75a913c6c124155f2cc85706258e6
 vendor/firmware/a650_zap.elf|faf2e20cd7989734f039df7f1bf97119bb4ffff3
 vendor/firmware/a650_zap.mdt|48172c6b4971cd0d188dc19536641c77006ea642
 
