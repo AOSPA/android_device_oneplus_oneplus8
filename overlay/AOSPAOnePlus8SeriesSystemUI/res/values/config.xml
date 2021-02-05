@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 Paranoid Android
+     Copyright (C) 2021 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,5 +18,8 @@
 
     <!-- FOD Color -->
     <color name="config_fodColor">#ffffe6</color>
+
+    <!-- Allow overriding the audio panel location to the left side. -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
 
 </resources>
