@@ -770,6 +770,10 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
+# Media
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_performance_c2.xml
+
 # NFC
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
