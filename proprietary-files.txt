@@ -640,6 +640,7 @@ vendor/etc/cacert_location.pem
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
+vendor/etc/sec_config
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
