@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
 
 # DRM
