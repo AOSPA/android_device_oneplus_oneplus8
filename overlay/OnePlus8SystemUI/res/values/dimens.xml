@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 Paranoid Android
+     Copyright (C) 2021 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -33,5 +33,8 @@
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">94px</dimen>
+
+    <!-- The rounded corner content padding. -->
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
 
 </resources>
