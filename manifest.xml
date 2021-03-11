@@ -360,16 +360,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>Uim1</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiRadio</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
-    </hal>
     <!-- deviceInfo HAL -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
