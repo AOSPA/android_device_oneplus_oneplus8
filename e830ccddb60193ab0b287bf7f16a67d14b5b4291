@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c05aa802_d21d216a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2021-03-11T06:29:30Z",
+      "side": 1,
+      "message": "HAL was introduced with 10800, but wasn\u0027t updated until shortly after tag release. Wonder what gives.\nhttps://source.codeaurora.org/quic/la/platform/vendor/qcom/kona/commit/?h\u003dLA.UM.9.16.r1-04100-MANNAR.0\u0026id\u003d32741df82ee4f1cada53aefdc465ebb5a58adcb7",
+      "revId": "e830ccddb60193ab0b287bf7f16a67d14b5b4291",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
