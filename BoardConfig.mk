@@ -78,7 +78,7 @@ DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/manifest.xml \
     $(DEVICE_PATH)/oneplus_manifest.xml
 
-DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 
 # Hacks
 BUILD_BROKEN_DUP_RULES := true
