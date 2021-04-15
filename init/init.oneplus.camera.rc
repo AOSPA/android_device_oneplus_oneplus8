@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,39 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-on fs
-    mkdir /mnt/vendor/persist/camera 0777 system system
-
-    # AMS TOF
-    chown system system /sys/kernel/tof_control/app0/capture
-    chmod 666 /sys/kernel/tof_control/app0/capture
-    chown system system /sys/kernel/tof_control/app0/app0_get_fac_calib
-    chmod 666 /sys/kernel/tof_control/app0/app0_get_fac_calib
-    chown system system /sys/kernel/tof_control/app0/app0_get_distance
-    chmod 666 /sys/kernel/tof_control/app0/app0_get_distance
-    chown system system /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
-    chmod 666 /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
-
-    # OIS
-    chown system system /sys/kernel/ois_control/dump_registers
-    chmod 666 /sys/kernel/ois_control/dump_registers
-
-    # Torch
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chmod 666 /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chmod 666 /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:switch_0/brightness
-    chmod 666 /sys/class/leds/led:switch_0/brightness
-    chown system system /sys/class/leds/led:switch_1/brightness
-    chmod 666 /sys/class/leds/led:switch_1/brightness
-    chown system system /sys/class/leds/led:switch_2/brightness
-    chmod 666 /sys/class/leds/led:switch_2/brightness
-    chown system system /sys/class/leds/led:torch_2/brightness
-    chmod 666 /sys/class/leds/led:torch_2/brightness
-    chown system system /sys/class/leds/led:switch_3/brightness
-    chmod 666 /sys/class/leds/led:switch_3/brightness
 
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
     override
