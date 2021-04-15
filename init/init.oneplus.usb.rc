@@ -22,14 +22,6 @@ on init
     chown system system /dev/dash
     chmod 0664 /dev/dash
 
-on post-fs
-    chmod 0664 /sys/module/qpnp_smb5/parameters/usb_connector_temp
-    chown system system /sys/module/qpnp_smb5/parameters/usb_connector_temp
-    chmod 0664 /sys/module/qpnp_smb5/parameters/disable_connector_protect
-    chown system system /sys/module/qpnp_smb5/parameters/disable_connector_protect
-    chmod 0664 /sys/module/qpnp_smb5/parameters/usb_interval_temp
-    chown system system /sys/module/qpnp_smb5/parameters/usb_interval_temp
-
 # Fix ADSP issue when booted with DASH connected.
 on property:sys.boot_completed=1
     write /sys/module/smb5_lib/parameters/sys_boot_complete 1

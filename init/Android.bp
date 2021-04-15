@@ -69,20 +69,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.oneplus.thermal.rc",
-    src: "init.oneplus.thermal.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.oneplus.ufs.rc",
-    src: "init.oneplus.ufs.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.oneplus.usb.rc",
     src: "init.oneplus.usb.rc",
     sub_dir: "init",

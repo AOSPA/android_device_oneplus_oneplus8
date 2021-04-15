@@ -190,8 +190,6 @@ PRODUCT_PACKAGES += \
     init.oneplus.fingerprint.rc \
     init.oneplus.haptics.rc \
     init.oneplus.power.rc \
-    init.oneplus.thermal.rc \
-    init.oneplus.ufs.rc \
     init.oneplus.usb.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
