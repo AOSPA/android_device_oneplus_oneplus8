@@ -50,7 +50,7 @@ public class TriStateHandler implements DeviceKeyHandler {
         switch (scanCode) {
             case MODE_NORMAL:
                 if (currentRingerMode != AudioManager.RINGER_MODE_NORMAL) {
-                    doHapticFeedback(VibrationEffect.EFFECT_DOUBLE_CLICK);
+                    doHapticFeedback(VibrationEffect.EFFECT_CLICK);
                     mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
                 } else {
                     return event;
@@ -58,7 +58,7 @@ public class TriStateHandler implements DeviceKeyHandler {
                 break;
             case MODE_VIBRATION:
                 if (currentRingerMode != AudioManager.RINGER_MODE_VIBRATE) {
-                    doHapticFeedback(VibrationEffect.EFFECT_THUD);
+                    doHapticFeedback(VibrationEffect.EFFECT_DOUBLE_CLICK);
                     mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
                 } else {
                     return event;
@@ -66,7 +66,6 @@ public class TriStateHandler implements DeviceKeyHandler {
                 break;
             case MODE_SILENCE:
                 if (currentRingerMode != AudioManager.RINGER_MODE_SILENT) {
-                    doHapticFeedback(VibrationEffect.EFFECT_POP);
                     mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
                 } else {
                     return event;
