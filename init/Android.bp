@@ -69,6 +69,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oneplus.telephony.rc",
+    src: "init.oneplus.telephony.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oneplus.usb.rc",
     src: "init.oneplus.usb.rc",
     sub_dir: "init",
