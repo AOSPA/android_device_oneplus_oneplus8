@@ -141,7 +141,9 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_async_powermode=0
+    ro.vendor.display.sensortype=2 \
+    vendor.display.enable_async_powermode=0 \
+    vendor.display.use_layer_ext=1
 
 # Doze
 PRODUCT_PACKAGES += \
