@@ -7,6 +7,7 @@ genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_set_value           
 genfscon sysfs /module/qpnp_smb5/parameters/video_call_on                                          u:object_r:vendor_sysfs_camera:s0
 
 # Charging
+genfscon sysfs /devices/platform/soc/994000.i2c/i2c-7/7-005c/power_supply/op_charger               u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:oneplus_wlchg/power_supply/wireless                       u:object_r:vendor_sysfs_battery_supply:s0
 
 # Display
