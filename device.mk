@@ -131,13 +131,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
 PRODUCT_PACKAGES += \
-    libqdutils \
-    libqservice \
-    libtinyxml \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -215,10 +209,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti
-
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
@@ -255,16 +245,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
-
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.enableadvancedscan=true \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1
 
 # Sensors
 PRODUCT_COPY_FILES += \
