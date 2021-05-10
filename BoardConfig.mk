@@ -83,9 +83,6 @@ DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 # Hacks
 BUILD_BROKEN_DUP_RULES := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus8
-
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.boot_devices=soc/1d84000.ufshc \
@@ -137,7 +134,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus8
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 150
