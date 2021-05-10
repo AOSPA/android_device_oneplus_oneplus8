@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "702a90b6_f61b5cbd",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2021-05-10T03:09:40Z",
+      "side": 1,
+      "message": "Any reason to add kona here? Also we should remove this outright on all OP8 trees since the targets are no longer unified and we don\u0027t care about TWRP.",
+      "revId": "85c028f7985ad76f24b339d1e6492005664c63b8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}

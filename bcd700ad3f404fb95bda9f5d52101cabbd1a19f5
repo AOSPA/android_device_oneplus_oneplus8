@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7572bcd_6db21585",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2021-05-10T03:09:40Z",
+      "side": 0,
+      "message": "This applies for all changes to system.prop, but I think we should delete system.prop outright and move the relevant properties to device.mk. It\u0027s what I did for ROG 3 and OP9 but we can keep the .prop* files but they should be cleaned at least.",
+      "revId": "bcd700ad3f404fb95bda9f5d52101cabbd1a19f5",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
