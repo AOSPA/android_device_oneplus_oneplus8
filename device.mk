@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Charging
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.charger.enable_suspend=1
+
 # Config Store
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -273,6 +277,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.sync_request=true \
     persist.vendor.sensors.allow_non_default_discovery=true
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.sensors.enable.mag_filter=true
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
