@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3062332d_78764019",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2021-05-10T12:12:24Z",
+      "side": 1,
+      "message": "Do 8 Pro, 8, and 8T all need separate builds without this commit?",
+      "revId": "e1a44a914899007f9777a5618df712ec944087f6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
