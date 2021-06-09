@@ -17,3 +17,6 @@ on init && property:ro.boot.prj_version=12
 
 on init && property:ro.boot.prj_version=14
     setprop ro.oneplus.overlay.variant 8/T
+
+on init && property:ro.boot.prj_version=15
+    setprop ro.oneplus.overlay.variant 8/T
