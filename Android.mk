@@ -16,7 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-ifneq ($(filter oneplus8 oneplus8pro oneplus8t,$(TARGET_DEVICE)),)
+ifneq ($(filter oneplus8 oneplus8pro oneplus8t oneplus9r,$(TARGET_DEVICE)),)
 
 # Symlinks
 CNE_SYMLINKS := $(TARGET_OUT_VENDOR_APPS)/CneApp/lib/arm64/
