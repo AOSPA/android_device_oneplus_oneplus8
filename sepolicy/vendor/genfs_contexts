@@ -1,25 +1,27 @@
 # Alert Slider
-genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data                                   u:object_r:vendor_sysfs_tri_state_key:s0
-genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib                             u:object_r:vendor_sysfs_tri_state_key:s0
-genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_set_value                              u:object_r:vendor_sysfs_tri_state_key:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data                                                   u:object_r:vendor_sysfs_tri_state_key:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib                                             u:object_r:vendor_sysfs_tri_state_key:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_set_value                                              u:object_r:vendor_sysfs_tri_state_key:s0
 
 # Camera
-genfscon sysfs /module/qpnp_smb5/parameters/video_call_on                                          u:object_r:vendor_sysfs_camera:s0
+genfscon sysfs /module/qpnp_smb5/parameters/video_call_on                                                          u:object_r:vendor_sysfs_camera:s0
 
 # Charging
-genfscon sysfs /devices/platform/soc/994000.i2c/i2c-7/7-005c/power_supply/op_charger               u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:oneplus_wlchg/power_supply/wireless                       u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/994000.i2c/i2c-7/7-005c/power_supply/op_charger                               u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:oneplus_wlchg/power_supply/wireless                                       u:object_r:vendor_sysfs_battery_supply:s0
 
 # Display
-genfscon proc  /touchpanel                                                                         u:object_r:proc_touchpanel:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/aod               u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha         u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm               u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim        u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress    u:object_r:vendor_sysfs_graphics:s0
+genfscon proc  /touchpanel                                                                                         u:object_r:proc_touchpanel:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/aod                               u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha                         u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm                               u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode            u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode    u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim                        u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress                    u:object_r:vendor_sysfs_graphics:s0
 
 # Vibrator
-genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                                       u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-3/3-005a                                                       u:object_r:sysfs_vibrator:s0
 
 # Wakeups
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                                                                                                                               u:object_r:sysfs_wakeup:s0
