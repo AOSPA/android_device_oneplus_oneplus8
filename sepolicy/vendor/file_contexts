@@ -2,6 +2,10 @@
 /mnt/vendor/persist/engineermode/tri_state_hall_data                                               u:object_r:vendor_persist_tri_state_key_file:s0
 /vendor/bin/tri-state-key_daemon                                                                   u:object_r:tri-state-key_daemon_exec:s0
 
+# Bluetooth
+/(vendor|system/vendor)/bin/awk                                                                    u:object_r:vendor_toolbox_exec:s0
+/(vendor|system/vendor)/bin/bt-mac-generator                                                       u:object_r:bt_mac_generator_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                   u:object_r:persist_camera_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?                                                  u:object_r:persist_camera_file:s0
