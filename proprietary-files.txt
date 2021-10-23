@@ -464,7 +464,9 @@ vendor/lib64/libvl53l1_daemon.so|ac47d64fe225cdbe4d3960c937770fa63a2481f7
 vendor/lib64/libyuv2.so|33adb1fa71d6fd749b07e00ea0ff9fa5bc67de79
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|4c3ca198c728849580d9dd77d505a9dcb45a1fa2
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|7a804b98e89d12a334ffcef7dceffbb1130b3494
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1ff5e9102a4eeb4442f4d89fe74bf19c93402d90
+
+# Camera - CUSTOM PATCHED
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1820b871dcf6b7dfc42a4a686bf103b9b484e351
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
