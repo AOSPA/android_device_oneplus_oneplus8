@@ -411,4 +411,8 @@
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
+    <!-- OnePlus uses a proprietary vibrator HAL to utilize the new powerful motor since the
+         OnePlus 7 Pro. -->
+    <bool name="config_hasOnePlusHapticMotor">true</bool>
+
 </resources>
