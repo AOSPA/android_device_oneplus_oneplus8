@@ -34,10 +34,6 @@
          1: Right -->
     <integer name="config_alertSliderLocation">1</integer>
 
-    <!-- Defines the sysfs attribute path used by the device
-         to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/class/drm/card0-DSI-1/dimlayer_bl_en</string>
-
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
     <integer name="config_doubleTapKeyCode">143</integer>
     <integer name="config_singleTapKeyCode">67</integer>
