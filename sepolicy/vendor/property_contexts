@@ -2,4 +2,4 @@
 vendor.calibration.fingerprint    u:object_r:vendor_fingerprint_prop:s0
 
 # Overlay
-ro.oneplus.overlay.variant        u:object_r:exported_overlay_prop:s0
+vendor.oneplus.overlay.variant    u:object_r:exported_overlay_prop:s0

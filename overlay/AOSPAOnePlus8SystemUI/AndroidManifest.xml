@@ -19,7 +19,7 @@
     <overlay
         android:isStatic="true"
         android:priority="800"
-        android:requiredSystemPropertyName="ro.oneplus.overlay.variant"
+        android:requiredSystemPropertyName="vendor.oneplus.overlay.variant"
         android:requiredSystemPropertyValue="8/T"
         android:targetPackage="com.android.systemui" />
 </manifest>
