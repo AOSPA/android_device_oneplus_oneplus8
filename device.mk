@@ -236,6 +236,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
 
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAOnePlus8SeriesFrameworks \
