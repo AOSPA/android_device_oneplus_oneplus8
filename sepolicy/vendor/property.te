@@ -1,2 +1,3 @@
 # Fingerprint
-type vendor_fingerprint_prop, property_type;
+system_public_prop(vendor_fingerprint_prop)
+system_vendor_config_prop(vendor_exported_overlay_prop)
