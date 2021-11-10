@@ -141,13 +141,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_async_powermode=0 \
     vendor.display.use_layer_ext=1
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sensor.pickup=oneplus.sensor.op_motion_detect
-
 # Factory Reset Protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
