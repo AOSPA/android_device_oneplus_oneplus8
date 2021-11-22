@@ -16,6 +16,24 @@
       "message": "lame, we can work it out",
       "revId": "2e59882ae627431adbbebd492c5e0a7300466c83",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a98e5f81_dbfe4ae3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000143
+      },
+      "writtenOn": "2021-11-22T10:31:46Z",
+      "side": 1,
+      "message": "We could manually edit CarrierConfig and add these to the default config for all carriers, but imo its better to not alter it and keep it inline with CAF.\n\n\u003cboolean name\u003d\"carrier_volte_available_bool\" value\u003d\"true\" /\u003e\n\u003cboolean name\u003d\"carrier_vt_available_bool\" value\u003d\"true\" /\u003e\n\u003cboolean name\u003d\"carrier_wfc_ims_available_bool\" value\u003d\"true\" /\u003e\n\nWe could add those override props to device/qcom/common tho, because it will work on all devices.",
+      "parentUuid": "2e5fbaa9_14c74a4b",
+      "revId": "2e59882ae627431adbbebd492c5e0a7300466c83",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
