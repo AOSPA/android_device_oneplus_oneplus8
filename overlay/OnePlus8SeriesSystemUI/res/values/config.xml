@@ -20,6 +20,9 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- Define UDFPS vendor code for AOD -->
+    <integer name="config_udfps_vendor_code">0</integer>
+
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
 
