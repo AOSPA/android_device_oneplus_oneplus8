@@ -275,6 +275,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1.vendor \
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/row/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_row.json \
