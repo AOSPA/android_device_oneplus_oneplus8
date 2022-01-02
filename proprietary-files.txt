@@ -1,22 +1,22 @@
-# ADSPRPC - OOS
-vendor/bin/adsprpcd|1d9477a7789658ab3949e770b90269032e038468
-vendor/bin/cdsprpcd|49e7bd1a410b2f4c15fe5728e0f57acb52d86751
-vendor/bin/dspservice|97d6e5d59d3c4be93154f544fe2afef31e24d305
-vendor/bin/loadalgo|0a2bdd7cf94bdf5ecf31ebfee47899cbd61ea094
-vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|8119845f8e6a24e53bdf286e19f34e9906d64e78
-vendor/lib64/libadsprpc.so|ece35b1d9c756adbed49d5ab44ba23696c9e5f45
-vendor/lib64/libadsp_default_listener.so|7f66bac08fa5edc53784591e0f99f390e095099b
-vendor/lib64/libcdsprpc.so|0852f993c82f0b46aa6cc786a78346bbbb91e355
-vendor/lib64/libcdsp_default_listener.so|3524b24feb967b095c10b91b22c98eff4d79e8ff
-vendor/lib64/libloadalgo_stub.so|3e9316ab5d38fb961306c13ef4830e9753b7d8fb
-vendor/lib64/libmdsprpc.so|96395c1eb8a56f8f0b06215e2be2cb3c6e89a3da
-vendor/lib64/libsdsprpc.so|4c3786d5fbf76f23fd839b389db57fe7c840ead1
-vendor/lib64/libssc_default_listener.so|d7221fe822fa929c838a089a936c869e388c66a0
-vendor/lib64/libsysmon_cdsp_skel.so|055eda65786454d6de63e1cecefbc7a69006d369
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|78e36705372a19ac664bb890dacd35a96e66bb32
+# ADSPRPC
+vendor/bin/adsprpcd
+vendor/bin/cdsprpcd
+vendor/bin/dspservice
+vendor/bin/loadalgo
+vendor/etc/init/vendor.qti.adsprpc-service.rc
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib64/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libloadalgo_stub.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/libsysmon_cdsp_skel.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Adreno - OOS
 vendor/firmware/a650_sqe.fw|12a8b97c9dd9de7eb759dada1ae11c5cdc08a2a2
@@ -148,43 +148,43 @@ vendor/lib64/libacdb-fts.so|be8da09561649682358d12233cceaef224aa4152
 vendor/lib64/libacdbrtac.so|c29abcce51398639a19f12153aa912d982c502ca
 vendor/lib64/libacdbloader.so|e308e1e221f3994c076743036aecc06190a84a78
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/com.dsi.ant@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbt-hidlclient.so
-vendor/lib/libbtnv.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# Bluetooth - LAHAINA
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|d6dc2016e466fa1af75fdf87687cb7d0da4b6922
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|c1580eec57407da638b3362307989aa3e6410903
+vendor/lib/hw/audio.bluetooth_qti.default.so|9a2af231ce14fb2cc547ecbe9477ba1d03da3b1f
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|7985aacab9144eb40b39a3fa7ace429b5fc344b5
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|fbde0502d2867d296b017726d267418bf470c398
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|0572fdd80fa967923b3a598578f4ecc546fcf817
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|2443909c9c1489a254a45bc47ca41dd5b935d08f
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4279398476187e4eaee25b17cc724bd300f79ce5
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|26924b6fcfa37beaf7a3cea26a088fef3dc78265
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|5f2de784f17fa29262de0c7cfd1dadd4a5d55131
+vendor/lib/btaudio_offload_if.so|4423b604489b2127980ec0ca5c8a7d5998f73d97
+vendor/lib/libbluetooth_audio_session_qti.so|7a53f9722ca7e3ed3035707cfd7de531a13db7b7
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|25d91c8c74d98536bbf27bfca663f3f17647890c
+vendor/lib/libbt-hidlclient.so|d908e85fd11cd795b017c1f145eabda51637783b
+vendor/lib/libbtnv.so|e642f7a5d0bd59a8409209486b37658d5e757721
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|e0c3bba159921cf37c544125c655356a25eebf5d
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|f807d291d5056b70c1b158239f6b6d312bb8b8d8
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ac759b58e79e9354dc55f3c4010fde4e691c4f20
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|931ecdd0588b81769d7b5e423837be0fd47b9e05
+vendor/lib64/hw/audio.bluetooth_qti.default.so|17159f95d23c9a3ebc34b562f4bb25cb250168e7
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|a6f313ee471609f35c242550024174bd3ead402d
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dd0b36ef9a3bd420513da57b8b54c0aee649fa41
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|6a398996c4c872fdd1efc861256d7de5a0bac09a
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|7003836405234b336a8bbc389636c6c1993ef57d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|342f9aad6e6d3ee068bd9ab5f8cb3eec95511a1d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b4c3a295957f5e5bf22bb12b97f74e813909fe10
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d00290f12780e0ab880f052676ec4b21c7f1b355
+vendor/lib64/btaudio_offload_if.so|6657bb86693405cffc3f6a746ec1bccd163283fd
+vendor/lib64/libbluetooth_audio_session_qti.so|c8313c30a247bde48a9934c11ecbe8c5ad410f19
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|370fb7502778170d0ecccdcb9dee50adf18538a2
+vendor/lib64/libbt-hidlclient.so|c88ccca98fc5c1e18334c1a4c97d5931c40e508e
+vendor/lib64/libbtnv.so|bf85b8cf3fdbe25604de21e9b870afbf78579a46
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d28d86ee5a290a31f38ac141a2b9485e9ef06e4e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|9ad4486873a656cc341dc34f728d57b6a59b36c4
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|ee11be18738a1ce8752eca2e66b70cbe728e47cc
 
 # CNE
 -vendor/app/CACertService/CACertService.apk
@@ -236,6 +236,7 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.2.so
+vendor/lib64/vendor.qti.data.factory@2.3.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
@@ -243,10 +244,12 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
+vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
+vendor/lib64/vendor.qti.latency@2.1.so
 
 # CVP
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
@@ -466,7 +469,7 @@ vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|4c3ca198c728849580d9dd
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|7a804b98e89d12a334ffcef7dceffbb1130b3494
 
 # Camera - CUSTOM PATCHED
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1820b871dcf6b7dfc42a4a686bf103b9b484e351
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|040754908683f59ee1b5b7f962f659fbed3a515a
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -474,6 +477,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
+-vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -639,6 +643,7 @@ vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
+vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
@@ -701,9 +706,11 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/lib-siputility.so
 vendor/lib64/lib-uceservice.so
 vendor/lib64/librcc.so
+vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
+vendor/lib64/vendor.qti.ims.factory@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
@@ -912,7 +919,18 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
+
+# QCV
+vendor/bin/init.qti.qcv.sh
+vendor/etc/init/init.qti.qcv.rc
+vendor/lib/libsoc_helper.so
+vendor/lib/libsoc_helper_jni.so
+vendor/lib64/libsoc_helper.so
+vendor/lib64/libsoc_helper_jni.so
 
 # QTEE
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -920,9 +938,9 @@ vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
