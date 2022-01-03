@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccc4b0a0_8986fca0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-01-03T20:32:37Z",
+      "side": 1,
+      "message": "I have DC dimming working already, just need to update UI, so we can keep this for now until I get time to fix ui ",
+      "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
