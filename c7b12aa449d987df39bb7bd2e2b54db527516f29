@@ -16,6 +16,24 @@
       "message": "I have DC dimming working already, just need to update UI, so we can keep this for now until I get time to fix ui ",
       "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5f36b74_bb26a621",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000143
+      },
+      "writtenOn": "2022-01-05T08:05:58Z",
+      "side": 1,
+      "message": "I would like to merge the tree in a fully functional stage. If DC dimming is ready at this point there is no need to merge this, but if its not we can still revert it at a later stage.",
+      "parentUuid": "ccc4b0a0_8986fca0",
+      "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
