@@ -34,6 +34,24 @@
       "parentUuid": "ccc4b0a0_8986fca0",
       "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "21489e0d_edc67e8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-01-05T14:30:21Z",
+      "side": 1,
+      "message": "does having this have any negative impact on the system if the framework side isn\u0027t merged? It fails to build or so?",
+      "parentUuid": "f5f36b74_bb26a621",
+      "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
