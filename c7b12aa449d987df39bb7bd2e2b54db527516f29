@@ -52,6 +52,24 @@
       "parentUuid": "f5f36b74_bb26a621",
       "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b887dbd_e4d8b89f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000143
+      },
+      "writtenOn": "2022-01-09T10:07:11Z",
+      "side": 1,
+      "message": "vendor_sysfs_dc_dim doesnt exist and breaks compilation",
+      "parentUuid": "21489e0d_edc67e8f",
+      "revId": "c7b12aa449d987df39bb7bd2e2b54db527516f29",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
