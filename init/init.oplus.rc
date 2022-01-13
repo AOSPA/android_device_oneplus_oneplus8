@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on fs
+    # Charger
+    write /proc/fastchg_fw_update 1
+    write /proc/ui_soc_decimal 1
+
 on early-boot
     # Radio
     exec_start oplus-sh
