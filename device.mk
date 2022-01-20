@@ -190,7 +190,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.oneplus.rc \
-    init.oneplus.camera.rc \
     init.oneplus.display.rc \
     init.oneplus.fingerprint.rc \
     init.oneplus.haptics.rc \
