@@ -201,9 +201,6 @@ PRODUCT_PACKAGES += \
     ueventd.oneplus.rc
 
 # Keymaster
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.crypto.allow_encrypt_override=true
