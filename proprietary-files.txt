@@ -31,10 +31,10 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/firmware/a650_sqe.fw|12a8b97c9dd9de7eb759dada1ae11c5cdc08a2a2
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
 vendor/firmware/a650_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
-vendor/firmware/a650_zap.b01|e32d59f3a7fc685e8aca1c26d8ab923f63a7f3f8
+vendor/firmware/a650_zap.b01|627aeb2ee11580952fdf9e09ae0073674a651b6d
 vendor/firmware/a650_zap.b02|270bae014df75a913c6c124155f2cc85706258e6
-vendor/firmware/a650_zap.elf|a1b7278553cefe43b70fbab8df8b252aa8824b67
-vendor/firmware/a650_zap.mdt|91ebf80b5bff2c803ee12bf85dae4647cf9bc2ef
+vendor/firmware/a650_zap.elf|d2284bbf601eb3df185fbe23bd317a7dbfaa59fe
+vendor/firmware/a650_zap.mdt|74fc4427ccb47cfdb60367bcd61679e14d73c7fb
 
 # Audio
 vendor/lib/hw/sound_trigger.primary.kona.so
@@ -539,17 +539,17 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Data - OOS
 vendor/firmware/ipa_uc.b00|c469dae927f8645bdc82adf217a20170f3e5bb9f
-vendor/firmware/ipa_uc.b01|7eaad0c59342b1d02dce4807e09961955ac3d6e1
+vendor/firmware/ipa_uc.b01|8c22d055e69ad7e6886f47cf301c4f5bffdf9a86
 vendor/firmware/ipa_uc.b02|4c7bcc7e9e5285194d271931d31128a6a6660823
-vendor/firmware/ipa_uc.elf|261f7d83cadc7231954f4204f0d6a778ca430cb5
-vendor/firmware/ipa_uc.mdt|749659c20131a4fb6acdde6a90aa959f197754b6
+vendor/firmware/ipa_uc.elf|0cb5e4c8ef5875969ea7252d068d7552147f7138
+vendor/firmware/ipa_uc.mdt|3fa555f6c30c9f1a8a5c92f13908ab7a8f2740d8
 vendor/firmware/ipa_fws.b00|7ee9b3855d94825e3ad588924377aee3f37a86ca
-vendor/firmware/ipa_fws.b01|0cceb0661dd1d24fe91624fb713d7caa9387896c
+vendor/firmware/ipa_fws.b01|9569b69f3804429a6f76ab5b184b22a23fda2704
 vendor/firmware/ipa_fws.b02|1ef321c36de80cef6706617c052c4f5c219f04df
 vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/ipa_fws.b04|e20c91f1c7e833886d443bbf0cb33223e303583b
-vendor/firmware/ipa_fws.elf|85a598df646e8803148f22fadc104b363c9c7e62
-vendor/firmware/ipa_fws.mdt|6fb8f76869510d599c0464befb1893c15d4d3e6b
+vendor/firmware/ipa_fws.elf|d4ae7283b88710598f649a13c1def5a174c718cc
+vendor/firmware/ipa_fws.mdt|92bc2cd6422ad169d28a28bf466c7a6b2dbefc09
 
 # Diag
 vendor/lib/libdiag.so
