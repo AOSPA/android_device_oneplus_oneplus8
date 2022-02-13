@@ -143,7 +143,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.sensortype=2 \
     vendor.display.disable_mask_layer_hint=1 \
     vendor.display.enable_async_powermode=0 \
-    vendor.display.use_layer_ext=1
+    vendor.display.use_layer_ext=1 \
+    ro.surface_flinger.refresh_rate_switching=true \
+    ro.surface_flinger.set_idle_timer_ms=80 \
+    ro.surface_flinger.set_display_power_timer_ms=1000 \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # Doze
 PRODUCT_PACKAGES += \
