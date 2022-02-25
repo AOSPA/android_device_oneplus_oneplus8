@@ -33,6 +33,32 @@
 #define OP_DISPLAY_NOTIFY_PRESS 9
 #define OP_DISPLAY_SET_DIM 10
 
+#define NATIVE_DISPLAY_P3 "/sys/class/drm/card0-DSI-1/native_display_p3_mode"
+#define NATIVE_DISPLAY_SRGB "/sys/class/drm/card0-DSI-1/native_display_srgb_color_mode"
+#define AUTH_STATUS_PATH  "/sys/class/drm/card0-DSI-1/auth_status"
+#define POWER_STATUS_PATH "/sys/class/drm/card0-DSI-1/power_status"
+
+
+int p3,srgb;
+
+/*
+ * Write value to path and close file.
+ */
+template <typename T>
+static void set(const std::string& path, const T& value) {
+	std::ofstream file(path);
+	file << value;
+}
+
+template <typename T>
+static T get(const std::string& path, const T& def) {
+	std::ifstream file(path);
+	T result;
+
+	file >> result;
+	return file.fail() ? def : result;
+}
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -54,7 +80,6 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
     if (!mDevice) {
         ALOGE("Can't open HAL module");
     }
-
     mVendorFpService = IVendorFingerprintExtensions::getService();
     mVendorDisplayService = IOneplusDisplay::getService();
 }
@@ -81,21 +106,30 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
     mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 1);
-
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    this->isCancelled = 0;
     mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
-
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
+    p3 = get(NATIVE_DISPLAY_P3, 0);
+    srgb = get(NATIVE_DISPLAY_SRGB, 0);
+    set(NATIVE_DISPLAY_SRGB, 0);
+    set(NATIVE_DISPLAY_P3, 0);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    this->isCancelled = 0;
+    set(NATIVE_DISPLAY_P3, 0);
+    set(NATIVE_DISPLAY_SRGB, 0);
+    set(NATIVE_DISPLAY_P3, p3);
+    set(NATIVE_DISPLAY_SRGB, srgb);
+    mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
     return Void();
 }
 
@@ -123,6 +157,7 @@ Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
 // HIDL-compliant FingerprintError.
 FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error,
             int32_t* vendorCode) {
+    *vendorCode = 0;
     switch(error) {
         case FINGERPRINT_ERROR_HW_UNAVAILABLE:
             return FingerprintError::ERROR_HW_UNAVAILABLE;
@@ -153,6 +188,7 @@ FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error,
 // to HIDL-compliant FingerprintAcquiredInfo.
 FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(
         int32_t info, int32_t* vendorCode) {
+    *vendorCode = 0;
     switch(info) {
         case FINGERPRINT_ACQUIRED_GOOD:
             return FingerprintAcquiredInfo::ACQUIRED_GOOD;
@@ -189,15 +225,17 @@ Return<uint64_t> BiometricsFingerprint::setNotify(
 }
 
 Return<uint64_t> BiometricsFingerprint::preEnroll()  {
+    mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
+    set(POWER_STATUS_PATH, 1);
     return mDevice->pre_enroll(mDevice);
 }
 
 Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69>& hat,
         uint32_t gid, uint32_t timeoutSec) {
     mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
+    mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 1);
     mVendorFpService->updateStatus(OP_DISABLE_FP_LONGPRESS);
     mVendorFpService->updateStatus(OP_RESUME_FP_ENROLL);
-
     const hw_auth_token_t* authToken =
         reinterpret_cast<const hw_auth_token_t*>(hat.data());
     return ErrorFilter(mDevice->enroll(mDevice, authToken, gid, timeoutSec));
@@ -205,9 +243,9 @@ Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69
 
 Return<RequestStatus> BiometricsFingerprint::postEnroll() {
     mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
+    mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
     mVendorFpService->updateStatus(OP_FINISH_FP_ENROLL);
     mVendorFpService->updateStatus(OP_ENABLE_FP_LONGPRESS);
-
     return ErrorFilter(mDevice->post_enroll(mDevice));
 }
 
@@ -216,10 +254,10 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
+    this->isCancelled = 1;
     mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
     mVendorFpService->updateStatus(OP_FINISH_FP_ENROLL);
-    mVendorFpService->updateStatus(OP_ENABLE_FP_LONGPRESS);
-
+    set(AUTH_STATUS_PATH, 2);
     return ErrorFilter(mDevice->cancel(mDevice));
 }
 
@@ -247,9 +285,14 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
 
 Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,
         uint32_t gid) {
-    mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
+    set(POWER_STATUS_PATH, 1);
     mVendorFpService->updateStatus(OP_ENABLE_FP_LONGPRESS);
-
+    if (this->isCancelled) {
+        mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
+        set(AUTH_STATUS_PATH, 0);
+    } else {
+        set(AUTH_STATUS_PATH, 1);
+    }
     return ErrorFilter(mDevice->authenticate(mDevice, operationId, gid));
 }
 
@@ -408,7 +451,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     }
 }
 
-} // namespace implementation
+}  // namespace implementation
 }  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics

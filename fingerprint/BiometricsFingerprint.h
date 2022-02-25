@@ -75,6 +75,7 @@ public:
     Return<void> onHideUdfpsOverlay() override;
 
 private:
+    int isCancelled = 0;
     static const char* getModuleId();
     static fingerprint_device_t* openHal();
     static void notify(const fingerprint_msg_t *msg); /* Static callback for legacy HAL implementation */
