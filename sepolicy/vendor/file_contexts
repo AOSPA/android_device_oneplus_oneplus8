@@ -1,6 +1,6 @@
 # Alert Slider
 /mnt/vendor/persist/engineermode/tri_state_hall_data                                               u:object_r:vendor_persist_tri_state_key_file:s0
-/vendor/bin/tri-state-key_daemon                                                                   u:object_r:tri-state-key_daemon_exec:s0
+/(system_ext|system/system_ext)/bin/tri-state-key_daemon                                           u:object_r:tri-state-key_daemon_exec:s0
 
 # Bluetooth
 /(vendor|system/vendor)/bin/awk                                                                    u:object_r:vendor_toolbox_exec:s0
@@ -27,13 +27,16 @@
 # Fingerprint
 /dev/goodix_fp                                                                                     u:object_r:fingerprint_device:s0
 /mnt/vendor/persist/engineermode/fpqrcode                                                          u:object_r:vendor_persist_fingerprint_file:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service.oneplus8    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus    u:object_r:hal_fingerprint_default_exec:s0
 
 # Project Info
 /sys/project_info(/.*)?                                                                            u:object_r:sysfs_project_info:s0
 
 # Sensors
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.op8-multihal                           u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2.1-service\.oneplus-multihal            u:object_r:hal_sensors_default_exec:s0
+
+# Vibrator
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oneplus                   u:object_r:hal_vibrator_default_exec:s0
 
 # Wakeups
 /sys/devices(/platform)?/soc/[0-9a-f]+.i2c/i2c-[0-9]+/[0-9]+-[0-9a-f]+/power_supply/op_charger/wakeup[0-9]+(/.*)?                                                                                                  u:object_r:sysfs_wakeup:s0

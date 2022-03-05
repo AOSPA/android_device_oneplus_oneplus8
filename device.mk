@@ -38,6 +38,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Alert Slider
 PRODUCT_PACKAGES += \
+    OnePlusFrameworksOverlay \
     TriStateHandler \
     tri-state-key_daemon
 
@@ -57,7 +58,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oneplus8 \
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor \
     vendor.oneplus.hardware.display@1.0.vendor
@@ -227,6 +228,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    device/oneplus/common \
     device/oneplus/oneplus8
 
 # Netflix
@@ -296,7 +298,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.op8-multihal \
+    android.hardware.sensors@2.1-service.oneplus-multihal \
     libsensorndkbridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -337,7 +339,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus8
+    vendor.qti.hardware.vibrator.service.oneplus
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
