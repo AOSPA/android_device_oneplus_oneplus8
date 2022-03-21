@@ -16,6 +16,24 @@
       "message": "why?",
       "revId": "d86e0fd14bfc1484f7866ae1f3b5a0a4ebe905fa",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5a6003e_b175df9d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-03-21T15:05:12Z",
+      "side": 1,
+      "message": "never questioned that, everyone was doing it i guess.. \nIn a quick search this is used in GSIs images (installs the prebuilt VNDK snapshots without linking them to any other modules at build time.)",
+      "parentUuid": "1cfd4536_f849099a",
+      "revId": "d86e0fd14bfc1484f7866ae1f3b5a0a4ebe905fa",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
