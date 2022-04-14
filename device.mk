@@ -157,6 +157,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.oplus.rc \
+    init.oplus.sh \
     init.oplus.camera.rc \
     init.oplus.display.rc \
     init.oplus.telephony.rc \
