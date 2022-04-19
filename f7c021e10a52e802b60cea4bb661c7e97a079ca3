@@ -16,6 +16,24 @@
       "message": "should we move this to vendor/aospa to enable for all devices?",
       "revId": "f7c021e10a52e802b60cea4bb661c7e97a079ca3",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3f1f752_2f086e7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-04-19T03:56:24Z",
+      "side": 1,
+      "message": "already exists in pixel repo",
+      "parentUuid": "7976eef8_46e85142",
+      "revId": "f7c021e10a52e802b60cea4bb661c7e97a079ca3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
