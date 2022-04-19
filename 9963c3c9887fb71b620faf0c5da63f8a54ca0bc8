@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "798b8fc2_05664895",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2022-04-19T01:51:08Z",
+      "side": 1,
+      "message": "We support armv8-2a-dotprod right?",
+      "revId": "9963c3c9887fb71b620faf0c5da63f8a54ca0bc8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
