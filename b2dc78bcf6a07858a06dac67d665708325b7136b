@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df18feb4_ea0a91d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-04-19T08:23:18Z",
+      "side": 1,
+      "message": "we\u0027re going back to Stock display stack. Lineage moving back again with OP10 Pro introducing makes us want to test it too to see what approach is best. needs to be revised ",
+      "revId": "b2dc78bcf6a07858a06dac67d665708325b7136b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
