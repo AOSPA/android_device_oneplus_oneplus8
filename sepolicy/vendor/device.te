@@ -1,9 +1,0 @@
-# Camera
-type sysfs_vl53l1, sysfs_type, fs_type;
-type vl53l1_device, dev_type;
-
-# DASH
-type dash_device, dev_type;
-
-# Fingerprint
-type fingerprint_device, dev_type;
