@@ -58,10 +58,14 @@ PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
     vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
+=======
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
+>>>>>>> 2892260 (oneplus9: Use HIDL HALs from hardware/oplus)
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.fod.pos.x=453 \
@@ -127,6 +131,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
+<<<<<<< HEAD
 PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
@@ -136,6 +141,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     vendor.display.enable_async_powermode=0 \
     vendor.display.use_layer_ext=1 \
+=======
+PRODUCT_PROPERTY_OVERRIDES += \
+>>>>>>> 2892260 (oneplus9: Use HIDL HALs from hardware/oplus)
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.set_idle_timer_ms=80 \
     ro.surface_flinger.set_touch_timer_ms=200 \
@@ -217,7 +225,8 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus8
+    device/oneplus/oneplus8 \
+    hardware/oplus
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -274,8 +283,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
 
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
+=======
+    android.hardware.sensors@2.1-service.op9-multihal \
+    libsensorndkbridge \
+    sensors.oplus
+>>>>>>> 2892260 (oneplus9: Use HIDL HALs from hardware/oplus)
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.sync_request=true \
@@ -321,7 +336,14 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     vendor.qti.hardware.vibrator.service.oneplus8
+=======
+    vendor.qti.hardware.vibrator.service.oplus
+
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+>>>>>>> 2892260 (oneplus9: Use HIDL HALs from hardware/oplus)
 
 # WLAN
 PRODUCT_COPY_FILES += \
