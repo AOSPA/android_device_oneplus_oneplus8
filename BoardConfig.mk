@@ -55,7 +55,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
 # Biometrics
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
@@ -144,8 +144,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 150
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
-BOARD_VENDOR_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy/vendor
-
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy/private
+include hardware/oplus/sepolicy/qti/SEPolicy.mk

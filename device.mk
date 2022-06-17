@@ -38,8 +38,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Alert Slider
 PRODUCT_PACKAGES += \
-    TriStateHandler \
-    tri-state-key_daemon
+    KeyHandler \
+    tri-state-key-calibrate
 
 # Attestation
 PRODUCT_COPY_FILES += \
@@ -57,18 +57,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
-    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.sys.fod.pos.x=453 \
-    persist.sys.fod.pos.y=1823 \
-    persist.sys.fod.size=174
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.boot.fingerprintbstate=orange
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
@@ -123,15 +112,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_PACKAGES += \
-    vendor.oneplus.hardware.display@1.0.vendor
-
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.sf.native_mode=2 \
-    ro.vendor.display.sensortype=2 \
-    vendor.display.disable_mask_layer_hint=1 \
-    vendor.display.enable_async_powermode=0 \
-    vendor.display.use_layer_ext=1 \
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.set_idle_timer_ms=80 \
     ro.surface_flinger.set_touch_timer_ms=200 \
@@ -213,7 +194,8 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus8
+    device/oneplus/oneplus8 \
+    hardware/oplus
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -263,7 +245,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
-    libsensorndkbridge
+    libsensorndkbridge \
+    sensors.oplus
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.sync_request=true \
@@ -309,7 +292,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus8
+    vendor.qti.hardware.vibrator.service.oplus
 
 # WLAN
 PRODUCT_COPY_FILES += \
