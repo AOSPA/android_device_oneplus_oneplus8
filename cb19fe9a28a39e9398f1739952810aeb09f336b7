@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "882a1bd9_1541d3dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-08-15T09:05:41Z",
+      "side": 1,
+      "message": "will be merged in qcom common",
+      "revId": "cb19fe9a28a39e9398f1739952810aeb09f336b7",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
