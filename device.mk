@@ -49,13 +49,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio_amplifier.kona
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=7
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
@@ -68,21 +67,11 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.fod.pos.y=1823 \
     persist.sys.fod.size=174
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.boot.fingerprintbstate=orange
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl \
-    com.dsi.ant@1.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    libbluetooth_audio_session \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
@@ -111,7 +100,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Charging
@@ -123,7 +111,7 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
 # DRM
@@ -138,7 +126,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.native_mode=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.disable_mask_layer_hint=1 \
@@ -158,7 +146,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.pickup=oneplus.sensor.op_motion_detect
 
 # Factory Reset Protection
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Fastboot
@@ -173,7 +161,10 @@ LOC_HIDL_VERSION = 4.0
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Gatekeeper
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
 # Health
@@ -181,9 +172,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
 
-# Incremental FS
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.incremental.enable=1
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -206,20 +197,27 @@ PRODUCT_PACKAGES += \
     ueventd.oneplus.rc
 
 # Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.crypto.allow_encrypt_override=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \
     ro.crypto.volume.metadata.method=dm-default-key
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.keystore_desede=true
+
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1.vendor
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -239,13 +237,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := kona
-
-# Project ID Quota
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# QSPM
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qspm.enable=true
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
@@ -274,7 +265,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.sync_request=true \
     persist.vendor.sensors.allow_non_default_discovery=true
 
@@ -285,9 +276,15 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # SOC Properties
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8250
+
+# Storage
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.incremental.enable=yes
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # System Helper
 PRODUCT_PACKAGES += \
