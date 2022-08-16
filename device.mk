@@ -73,14 +73,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl \
-    com.dsi.ant@1.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    libbluetooth_audio_session \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    libbluetooth_audio_session
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
@@ -111,7 +104,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Charging
@@ -173,6 +165,9 @@ LOC_HIDL_VERSION = 4.0
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu=true
 
@@ -180,6 +175,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
 
 # Incremental FS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,9 +216,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1.vendor
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
