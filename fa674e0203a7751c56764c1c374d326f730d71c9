@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95ad5748_639e7759",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-08-16T20:37:29Z",
+      "side": 1,
+      "message": "our soc is armv8-2a, and supports dotprod so we better use the right flags",
+      "revId": "fa674e0203a7751c56764c1c374d326f730d71c9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
