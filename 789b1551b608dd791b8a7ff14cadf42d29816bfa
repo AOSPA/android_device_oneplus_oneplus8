@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d302912_2c9542eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-08-16T21:03:29Z",
+      "side": 1,
+      "message": "you don\u0027t have https://github.com/AOSPA/android_hardware_qcom_display/commit/7aff2a93f9a88f761d08fa8abfd3cc5c27779e16, so you don\u0027t need to define touch_timer yourself.  looks like the rest are only in 8350 and higher so you will need those.",
+      "revId": "789b1551b608dd791b8a7ff14cadf42d29816bfa",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
