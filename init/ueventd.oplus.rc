@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2022 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Reserve
+/dev/block/bootdevice/by-name/oplusreserve1    0660    root    system
+
+# Factory Reset Protection
+/dev/block/by-name/frp 0600    system    system
+
+# WiFi
+firmware_directories /odm/etc/wifi/
