@@ -51,9 +51,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
-# Audio
-AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
-
 # Biometrics
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
@@ -73,12 +70,12 @@ TARGET_SCREEN_DENSITY := 420
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/oneplus_vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/oplus_vendor_framework_compatibility_matrix.xml \
     vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/manifest.xml \
-    $(DEVICE_PATH)/oneplus_manifest.xml
+    $(DEVICE_PATH)/oplus_manifest.xml
 
 DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 
@@ -104,7 +101,6 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_RAMDISK_OFFSET := 0x01000000
 
 KERNEL_DEFCONFIG := vendor/$(TARGET_BOARD_PLATFORM)-perf_defconfig
 
