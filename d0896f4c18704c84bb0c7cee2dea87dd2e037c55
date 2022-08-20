@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77e9f599_55d09ee8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-08-20T11:39:42Z",
+      "side": 1,
+      "message": "what happens for regular op8 which can only do 90hz if I remember correctly",
+      "revId": "d0896f4c18704c84bb0c7cee2dea87dd2e037c55",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
