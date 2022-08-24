@@ -34,6 +34,24 @@
       "parentUuid": "77e9f599_55d09ee8",
       "revId": "d0896f4c18704c84bb0c7cee2dea87dd2e037c55",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bf1b2ee_320a6767",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-08-24T22:25:39Z",
+      "side": 1,
+      "message": "* OP8 only has 90hz refresh rate, although it\u0027s already defined in op8 overlay, which overlays op8series overlay where this is set. (850 vs 800 RRO priority)",
+      "parentUuid": "963e68dd_08d2fda0",
+      "revId": "d0896f4c18704c84bb0c7cee2dea87dd2e037c55",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
