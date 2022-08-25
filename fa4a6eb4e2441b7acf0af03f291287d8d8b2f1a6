@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a42f3461_487597db",
+        "filename": "device.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2022-08-25T21:51:37Z",
+      "side": 0,
+      "message": "try to drop this lib as well, follow the comments at:\n\nhttps://gerrit.aospa.co/c/AOSPA/android_device_xiaomi_lmi/+/22817",
+      "revId": "fa4a6eb4e2441b7acf0af03f291287d8d8b2f1a6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
