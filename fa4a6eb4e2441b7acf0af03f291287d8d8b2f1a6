@@ -34,6 +34,24 @@
       "parentUuid": "a42f3461_487597db",
       "revId": "fa4a6eb4e2441b7acf0af03f291287d8d8b2f1a6",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47a4a030_d2b92ac1",
+        "filename": "device.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-08-26T08:55:22Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "50afbb4f_da5517b5",
+      "revId": "fa4a6eb4e2441b7acf0af03f291287d8d8b2f1a6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
