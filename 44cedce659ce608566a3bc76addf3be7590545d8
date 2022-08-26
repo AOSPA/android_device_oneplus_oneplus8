@@ -16,6 +16,24 @@
       "message": "this permission doesn\u0027t exist anymore.",
       "revId": "44cedce659ce608566a3bc76addf3be7590545d8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d766b7e_f9632275",
+        "filename": "device.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-08-26T08:54:46Z",
+      "side": 1,
+      "message": "this was done here https://gerrit.aospa.co/c/AOSPA/android_device_oneplus_oneplus8/+/22827 , although makes sense to do it here. Will follow",
+      "parentUuid": "acf4d735_7cc91d17",
+      "revId": "44cedce659ce608566a3bc76addf3be7590545d8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
