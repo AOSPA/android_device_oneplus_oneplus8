@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter oneplus8 oneplus8pro oneplus8t,$(TARGET_DEVICE)),)
+ifneq ($(filter oneplus8 oneplus8pro oneplus8t oneplus9r,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
